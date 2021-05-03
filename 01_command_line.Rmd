@@ -1,4 +1,4 @@
-# Git Install Guide
+# Command Line Tools
 
 ```{r include=FALSE}
 # git images
