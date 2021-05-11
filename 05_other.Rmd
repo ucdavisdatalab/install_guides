@@ -1,0 +1,78 @@
+# Other Data Tools
+
+```{r include=FALSE}
+# OpenRefine images
+or_img01 = "../img/win_or_install_1.jpg"
+or_img02 = "../img/win_or_install_2.jpg"
+or_img03 = "../img/win_or_install_3.jpg"
+or_img04 = "../img/win_or_install_4.jpg"
+or_img05 = "../img/win_or_install_5.jpg"
+or_img06 = "../img/win_or_install_6.jpg"
+or_img07 = "../img/win_or_install_7.jpg"
+or_img08 = "../img/win_or_install_8.jpg"
+or_img09 = "../img/win_or_install_9.jpg"
+or_img10 = "../img/win_or_install_10.jpg"
+or_img11 = "../img/win_or_install_11.jpg"
+```
+
+## OpenRefine
+
+### Introduction
+
+OpenRefine is an open source tool used to clean and pre-process messy data. While most people are familiar with data cleaning in their coding tool of choice (R, Python, Julia, etc.), OpenRefine is designed to provide powerful cleaning capabilities with minimal overhead. One of the most helpful capabilities of OpenRefine is the ability to check for possible duplicates and misspellings of text data using it's text facet tools.
+
+### OpenRefine on Windows
+
+Open your web browser of choice and navigate to the OpenRefine homepage at [https://openrefine.org/](https://openrefine.org/){rel="noopener noreferrer" target="_blank"}. Click on the download button in the left sidebar.
+
+![](`r or_img01`)
+
+On the download page, scroll to the latest version of OpenRefine and select the **Windows kit**. If you are unsure if you have Java installed on your system, choose the **Windows kit with embedded Java** instead.
+
+![](`r or_img02`)
+
+Once the download has completed, open the zip and move the contents to a convenient location on your computer.
+
+![](`r or_img03`)
+
+Open the resulting directory, and double click on the **openrefine.exe** executable.
+
+![](`r or_img04`)
+
+The OpenRefine executable will start a terminal window, and shortly after launch a tab in your default web browser with the OpenRefine interface.
+ 
+![](`r or_img05`)
+
+### OpenRefine on Mac
+
+If you are installing OpenRefine on a Mac, there is no extra configuration. Simply go the [download page for OpenRefine](https://openrefine.org/download.html){rel="noopener noreferrer" target="_blank"} and choose the latest version for mac. Run the installer package when it is finished downloading. If you receive an error regarding the app being from an unidentified developer, please [follow the instructions here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac){rel="noopener noreferrer" target="_blank"}.
+
+### Verifying your install
+
+To verify everything is working, first start Openrefine. It will open a page in your browser of choice that resembles the following.
+
+![](`r or_img06`)
+
+Click the `Choose Files` button, and enter [this dataset](https://raw.githubusercontent.com/ucdavisdatalab/research-toolkits/main/data/job_board_errors.csv) (you can just put in the URL). Click `Next`.
+
+![](`r or_img07`)
+
+Openrefine will load in the data and present you with a preview. The defaults should be fine. Click `Create Project` in the upper right hand corner.
+
+![](`r or_img08`)
+
+You will then be presented with the Openrefine working area. Click the arrow next to the `What sector ...` column and select `Facet -> Text facet`.
+
+![](`r or_img09`)
+
+In the left hand menu, click the `Cluster` button.
+
+![](`r or_img10`)
+
+In the following menu, for method select `nearest neighbor`. Openrefine will look through that column for any strings that are similar, and show you. This can be helpful for finding typos. Here, we see there are two misspellings of "Academia". Click the Check-box in the `Merge?` column, then select `Merge Selected & Close`. Openrefine will change all strings in the `Values in Cluster` column to match the `New Cell Value`. If that all worked, Openrefine is working!
+
+![](`r or_img11`)
+
+### Installation troubleshooting
+
+If you are not able to successfully install OpenRefine on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
