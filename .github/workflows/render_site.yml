@@ -20,7 +20,5 @@ jobs:
         run: git add docs
       - name: Commit results
         run: |
-          git commit docs -m 'Re-build site' || echo "No changes to 
-commit"
+          git commit docs -m 'Re-build site' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
-
