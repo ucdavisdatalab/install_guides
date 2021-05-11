@@ -1,0 +1,19 @@
+# SQL and Database Tools
+
+```{r include=FALSE}
+
+```
+
+## DBeaver (SQL Database Viewer)
+
+### Introduction
+
+### DBeaver on Windows
+
+### DBeaver on Mac
+
+### Verifying your install
+
+### Installation troubleshooting
+
+If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
