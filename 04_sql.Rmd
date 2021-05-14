@@ -1,18 +1,53 @@
 # SQL and Database Tools
 
 ```{r include=FALSE}
-
+# Dbeaver images
+db_1 = "./img/win_db_1.jpg"
+db_2 = "./img/win_db_2.jpg"
+db_3 = "./img/win_db_3.jpg"
+db_4 = "./img/win_db_3.jpg"
+db_5 = "./img/win_db_3.jpg"
+db_6 = "./img/win_db_6.jpg"
+db_7 = "./img/win_db_7.jpg"
 ```
 
 ## DBeaver (SQL Database Viewer)
 
 ### Introduction
 
+[DBeaver](https://dbeaver.io/){rel="noopener noreferrer" target="_blank"} is a free and open source tool to inspect and manipulate databases of nearly any type. It has versions for Windows, Mac, and Linux. This can offer a more intuitive method for people new to databases to interact with their data, and create code to query data for other uses. Note that DBeaver does not *create* a database, it only allows you to view and interact with one.
+
 ### DBeaver on Windows
 
-### DBeaver on Mac
+First navigate to the [download page](https://dbeaver.io/download/){rel="noopener noreferrer" target="_blank"} on DBeaver's website. Scroll down and click on the installer link to download it.
 
-### Verifying your install
+![](`r db_1`)
+
+After the install finishes, click on the executable to launch the installer.
+
+![](`r db_2`)
+
+Once you select your language, the installer will prompt you to close all other applications, and hit next. On the following page, accept the license agreement by clicking `I Agree`.
+
+![](`r db_3`)
+
+On the next page, select if you would like to install DBeaver for all users on your machine, or just you. In most cases it is fine to install for everyone.
+
+![](`r db_4`)
+
+Depending on your selection, the installer may need to re-start with administrator privileges. Enter your previous options again until you reach the "Choose Components" page. Once here, you can leave the default settings and click `Next`.
+
+![](`r db_5`)
+
+The next page will ask where you would like to install DBeaver. The default location should work for most people, click `Next` to continue. The same is the true of the next page regarding the start menu location, you can click `Install` to start the installation process.
+
+![](`r db_6`)
+
+Once the installation is complete, you can click `Finish` to exit the installer.
+
+![](`r db_7`)
+
+### DBeaver on Mac
 
 ### Installation troubleshooting
 
