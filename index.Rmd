@@ -1,10 +1,10 @@
 ---
-title: YOUR WORKSHOP TITLE
-author: [YOUR NAME]
+title: UC Davis DataLab Install Guides
+author: UC Davis DataLab
 date: "`r Sys.Date()`"
 
-github-repo: ucdavisdatalab/YOUR_REPO
-url: "https://ucdavisdatalab.github.io/YOUR_REPO/"
+github-repo: ucdavisdatalab/install_guides
+url: "https://ucdavisdatalab.github.io/install_guides/"
 
 site: "bookdown::bookdown_site"
 knit: "bookdown::render_book"
@@ -16,13 +16,22 @@ output:
           <li><a href="https://datalab.ucdavis.edu/">
             <img src="https://datalab.ucdavis.edu/wp-content/uploads/2019/07/datalab-logo-full-color-rgb-1.png" style="height: 100%; width: 100%; object-fit: contain" />
           </a></li>
-          <li><a href="./" style="font-size: 18px">YOUR WORKSHOP TITLE</a></li>
+          <li><a href="./" style="font-size: 18px">UC Davis DataLab Install Guides</a></li>
         collapse: section
       sharing: no
-      view: https://github.com/ucdavisdatalab/YOUR_REPO/blob/master/%s
-      edit: https://github.com/ucdavisdatalab/YOUR_REPO/edit/master/%s
+      view: https://github.com/ucdavisdatalab/install_guides/blob/master/%s
+      edit: https://github.com/ucdavisdatalab/install_guides/edit/master/%s
 ---
 
 # Overview {-}
 
-YOUR DESCRIPTION, LEARNING GOALS, PREREQUISITES, ETC
+These guides will walk you through installing some of the most common data science tools used at the UC Davis DataLab and beyond. Use the sidebar on the left to navigate to the category of programs you would like to install. If you are taking a class or workshop using these tools, please install them prior to attending. The workshop information should tell you what software you need.
+
+## Contributions
+
+This guide is maintained by the UC Davis DataLab community, and is open for contribution. See how you can contribute on the [Github repo](https://github.com/ucdavisdatalab/install_guides){rel="noopener noreferrer" target="_blank"}.
+
+This toolkit has been made possible thanks to contributions by:
+
+* Carl Stahmer
+* [Jared Joseph](https://jnjoseph.com/){rel="noopener noreferrer" target="_blank"}
