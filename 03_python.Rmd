@@ -29,11 +29,11 @@ pm_python_3 = "./img/pm_python_3.jpg"
 
 ### Introduction
 
-[Anaconda](https://www.anaconda.com/#) is a pre-built environment manager for python. These environments let you keep several separate installations of python on your machine, negating the risk of module versions and incompatibilities ruining your project. The environment are also easily exportable, letting you to easily share them with collaborators.
+[Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} is a pre-built environment manager for python. These environments let you keep several separate installations of python on your machine, negating the risk of module versions and incompatibilities ruining your project. The environment are also easily exportable, letting you to easily share them with collaborators.
 
 ### Anaconda on Windows
 
-To install [Anaconda](https://www.anaconda.com/#) on windows, first navigate to their site, select products, then individual edition.
+To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on windows, first navigate to their site, select products, then individual edition.
 
 ![](`r anaconda_1`)
 

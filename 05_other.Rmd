@@ -53,7 +53,7 @@ To verify everything is working, first start Openrefine. It will open a page in 
 
 ![](`r or_img06`)
 
-Click the `Choose Files` button, and enter [this dataset](https://raw.githubusercontent.com/ucdavisdatalab/research-toolkits/main/data/job_board_errors.csv) (you can just put in the URL). Click `Next`.
+Click the `Choose Files` button, and enter [this dataset](https://raw.githubusercontent.com/ucdavisdatalab/research-toolkits/main/data/job_board_errors.csv){rel="noopener noreferrer" target="_blank"} (you can just put in the URL). Click `Next`.
 
 ![](`r or_img07`)
 
