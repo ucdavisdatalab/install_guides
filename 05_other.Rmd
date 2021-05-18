@@ -2,17 +2,17 @@
 
 ```{r include=FALSE}
 # OpenRefine images
-or_img01 = "../img/win_or_install_1.jpg"
-or_img02 = "../img/win_or_install_2.jpg"
-or_img03 = "../img/win_or_install_3.jpg"
-or_img04 = "../img/win_or_install_4.jpg"
-or_img05 = "../img/win_or_install_5.jpg"
-or_img06 = "../img/win_or_install_6.jpg"
-or_img07 = "../img/win_or_install_7.jpg"
-or_img08 = "../img/win_or_install_8.jpg"
-or_img09 = "../img/win_or_install_9.jpg"
-or_img10 = "../img/win_or_install_10.jpg"
-or_img11 = "../img/win_or_install_11.jpg"
+or_img01 = "./img/win_or_install_1.jpg"
+or_img02 = "./img/win_or_install_2.jpg"
+or_img03 = "./img/win_or_install_3.jpg"
+or_img04 = "./img/win_or_install_4.jpg"
+or_img05 = "./img/win_or_install_5.jpg"
+or_img06 = "./img/win_or_install_6.jpg"
+or_img07 = "./img/win_or_install_7.jpg"
+or_img08 = "./img/win_or_install_8.jpg"
+or_img09 = "./img/win_or_install_9.jpg"
+or_img10 = "./img/win_or_install_10.jpg"
+or_img11 = "./img/win_or_install_11.jpg"
 ```
 
 ## OpenRefine

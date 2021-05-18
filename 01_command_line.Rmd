@@ -27,6 +27,15 @@ git_url38 <- "./img/win_git_install_20_experimental_options.png"
 git_url39 <- "./img/win_git_install_21_install_progress.png"
 git_url40 <- "./img/win_git_install_22_install_complete.png"
 git_url41 <- "./img/win_git_install_23_deslect_and_finish.png"
+
+# lsw images
+
+lsw_1 = "./img/win_lsw_1.jpg"
+lsw_2 = "./img/win_lsw_2.jpg"
+lsw_3 = "./img/win_lsw_3.jpg"
+lsw_4 = "./img/win_lsw_4.jpg"
+lsw_5 = "./img/win_lsw_5.jpg"
+lsw_6 = "./img/data lab command line.jpg"
 ```
 
 ## Git
@@ -174,13 +183,41 @@ If you are installing Git on a Mac, there is no extra configuration. Simply go t
 
 If you are not able to successfully install Git on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
 
-## Linux Subsystem for Windows (LSW; a.k.a. Command Line)
+## Linux Subsystem for Windows (Ubuntu)
 
 ### Introduction
 
+Windows now has the ability to install a linux operating system on your machine without the use of an emulator. This gives you a full-featured linux environment that can interact with your normal files.
+
 ### LSW on Windows
 
+In the start menu, search for "Turn Windows features on or off" and open that settings window. 
+
+![](`r lsw_1`)
+
+In the settings window, scroll down to "Windows Subsystem for Linux", check the box next to it, and select `OK` at the bottom of the window.
+
+![](`r lsw_2`)
+
+You will not need to restart your computer. Once you have rebooted, open the Windows Store from the start menu.
+
+![](`r lsw_3`)
+
+In the Windows Store, search for `Ubuntu`, and select the version-less one unless you have a reason to pick a specific version.
+
+![](`r lsw_4`)
+
+On the Ubuntu page, select `Get` to install.
+
 ### Verifying your install
+
+In the start menu, search for and run `Ubuntu`.
+
+![](`r lsw_5`)
+
+If a terminal window opens, you should be good to go!
+
+![](`r lsw_6`)
 
 ### Installation troubleshooting
 
