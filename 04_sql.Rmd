@@ -1,0 +1,99 @@
+# SQL and Database Tools
+
+```{r include=FALSE}
+# Dbeaver images
+db_1 = "./img/win_db_1.jpg"
+db_2 = "./img/win_db_2.jpg"
+db_3 = "./img/win_db_3.jpg"
+db_4 = "./img/win_db_3.jpg"
+db_5 = "./img/win_db_3.jpg"
+db_6 = "./img/win_db_6.jpg"
+db_7 = "./img/win_db_7.jpg"
+
+# DB Browser
+dbb_1 = "./img/win_dbb_1.jpg"
+dbb_2 = "./img/win_dbb_2.jpg"
+dbb_3 = "./img/win_dbb_3.jpg"
+dbb_4 = "./img/win_dbb_4.jpg"
+dbb_5 = "./img/win_dbb_5.jpg"
+```
+
+## DBeaver (SQL Database Viewer)
+
+### Introduction
+
+[DBeaver](https://dbeaver.io/){rel="noopener noreferrer" target="_blank"} is a free and open source tool to inspect and manipulate databases of nearly any type. It has versions for Windows, Mac, and Linux. This can offer a more intuitive method for people new to databases to interact with their data, and create code to query data for other uses. Note that DBeaver does not *create* a database, it only allows you to view and interact with one.
+
+### DBeaver on Windows
+
+First navigate to the [download page](https://dbeaver.io/download/){rel="noopener noreferrer" target="_blank"} on DBeaver's website. Scroll down and click on the installer link to download it.
+
+![](`r db_1`)
+
+After the install finishes, click on the executable to launch the installer.
+
+![](`r db_2`)
+
+Once you select your language, the installer will prompt you to close all other applications, and hit next. On the following page, accept the license agreement by clicking `I Agree`.
+
+![](`r db_3`)
+
+On the next page, select if you would like to install DBeaver for all users on your machine, or just you. In most cases it is fine to install for everyone.
+
+![](`r db_4`)
+
+Depending on your selection, the installer may need to re-start with administrator privileges. Enter your previous options again until you reach the "Choose Components" page. Once here, you can leave the default settings and click `Next`.
+
+![](`r db_5`)
+
+The next page will ask where you would like to install DBeaver. The default location should work for most people, click `Next` to continue. The same is the true of the next page regarding the start menu location, you can click `Install` to start the installation process.
+
+![](`r db_6`)
+
+Once the installation is complete, you can click `Finish` to exit the installer.
+
+![](`r db_7`)
+
+### DBeaver on Mac
+
+### Installation troubleshooting
+
+If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+## DB Browser
+
+### Introduction
+
+[DB Browser](https://sqlitebrowser.org/){rel="noopener noreferrer" target="_blank"} is an ultra lightweight viewer for SQLite databases. It is made to allow those familiar with spreadsheets to work more easily with the common SQLite format. However, that is all that it does; you cannot use it on other database types.
+
+### DB Browser on Windows
+
+First head to the [DB Browser download page](https://sqlitebrowser.org/dl/), and select the version that matches your system. On Windows this is most likely the 64-bit standard installer.
+
+![](`r dbb_1`)
+
+Once the download has finished, start the installer from the browser or your download location.
+
+![](`r dbb_2`)
+
+Once you have started the installer, press the `Next` button to continue.
+
+![](`r dbb_3`)
+
+On the next screen, accept the license agreement and press `Next`. The following page will ask you if you would like to place shortcuts anywhere. Desktop will place icons on your desktop, while Program Menu will add options to your right click menu. You can choose to have these if you wish, I will not. Press `Next` once you have decided.
+
+![](`r dbb_4`)
+
+On the following screen, you will be asked to select what components you want to install and where. You can safely keep the defaults and continue. Press `Install` on the following page.
+
+![](`r dbb_5`)
+
+One the installation is complete, you can press `Finish` to close the installer!
+
+### Verifying your install
+
+To test everything is working launch DB Browser from the windows menu or from the install location (`C:\Program Files\DB Browser for SQLite` by default).
+
+### Installation troubleshooting
+
+If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
