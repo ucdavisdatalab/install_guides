@@ -13,6 +13,12 @@ or_img08 = "./img/win_or_install_8.jpg"
 or_img09 = "./img/win_or_install_9.jpg"
 or_img10 = "./img/win_or_install_10.jpg"
 or_img11 = "./img/win_or_install_11.jpg"
+
+# qgis
+qgis_1 = "./img/win_qgis_1.jpg"
+qgis_2 = "./img/win_qgis_2.jpg"
+qgis_3 = "./img/win_qgis_3.jpg"
+qgis_4 = "./img/win_qgis_4.jpg"
 ```
 
 ## OpenRefine
@@ -72,6 +78,36 @@ In the left hand menu, click the `Cluster` button.
 In the following menu, for method select `nearest neighbor`. Openrefine will look through that column for any strings that are similar, and show you. This can be helpful for finding typos. Here, we see there are two misspellings of "Academia". Click the Check-box in the `Merge?` column, then select `Merge Selected & Close`. Openrefine will change all strings in the `Values in Cluster` column to match the `New Cell Value`. If that all worked, Openrefine is working!
 
 ![](`r or_img11`)
+
+### Installation troubleshooting
+
+If you are not able to successfully install OpenRefine on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+## Qgis
+
+[Qgis](https://www.qgis.org){rel="noopener noreferrer" target="_blank"} is a free and open source geospatial software suite. It can be used for geospatial analysis and cartography. It also features a rich development community, with python based addons that extend the core functionality.
+
+### Qgis on Windows
+
+First visit the [download page](https://www.qgis.org/en/site/forusers/download.html){rel="noopener noreferrer" target="_blank"} for Qgis and select the version for your machine. This will most likely be the 64-bit version.
+
+![](`r qgis_1`)
+
+Once the download has finished, launch the installer from your browser or downloads folder.
+
+![](`r qgis_2`)
+
+On the first page of the installer, select "Express Desktop Install" and press `Next`. When prompted what components you would like to install, keep the default. The installer may say you have unmet dependencies. If this is the case, install them as well and accept the license agreements. It will then start to download the required components.
+
+![](`r qgis_3`)
+
+Once the download is complete, it will start to install. If this is the first time you are installing Qgis, it will stop on the last page telling you it is finished. If you are updating an installation, it will close silently once it finishes.
+
+### Verifying your install
+
+Launch Qgis from your programs menu. If the main page comes up, you should be good!
+
+![](`r qgis_4`)
 
 ### Installation troubleshooting
 
