@@ -19,6 +19,15 @@ qgis_1 = "./img/win_qgis_1.jpg"
 qgis_2 = "./img/win_qgis_2.jpg"
 qgis_3 = "./img/win_qgis_3.jpg"
 qgis_4 = "./img/win_qgis_4.jpg"
+
+# Tesseract
+tes_1 = "./img/win_tes_1.jpg"
+tes_2 = "./img/win_tes_2.jpg"
+tes_3 = "./img/win_tes_3.jpg"
+tes_4 = "./img/win_tes_4.jpg"
+tes_5 = "./img/win_tes_5.jpg"
+tes_6 = "./img/win_tes_6.jpg"
+tes_7 = "./img/win_tes_7.jpg"
 ```
 
 ## OpenRefine
@@ -112,3 +121,45 @@ Launch Qgis from your programs menu. If the main page comes up, you should be go
 ### Installation troubleshooting
 
 If you are not able to successfully install OpenRefine on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+## Tesseract
+
+### Introduction
+
+[Tesseract](https://opensource.google/projects/tesseract){rel="noopener noreferrer" target="_blank"} is Google's open source tool for Optical Character Recognition (OCR). It is used to convert images of text into usable textual data. This is a very difficult task for computers, and will often result in some amount of errors. Nevertheless, significant progress has been made in recent years, and it is a very useful tool to have. Tesseract is often called by other programming languages such as R or Python to perform OCR tasks.
+
+### Tesseract on Windows
+
+Tesseract is natively a linux tool, but community maintained ports exist for Windows. We will be using the binaries prepared by the [Mannheim University Library (UB Mannheim)](https://github.com/UB-Mannheim/tesseract/wiki){rel="noopener noreferrer" target="_blank"} to install Tesseract today. First head to their [github page](https://github.com/UB-Mannheim/tesseract/wiki){rel="noopener noreferrer" target="_blank"} and scroll down to "The latest installers can be downloaded here." Download the version that matches your machine (most likely 64 bit).
+
+![](`r tes_1`)
+
+Once the download has finished, launch the installer from your browser or downloads folder.
+
+![](`r tes_2`)
+
+Once the installer has started, select your language and continue to the second page by pressing `Next >`. Accept the license agreement by pressing `I Agree`. On the following page, select if you would like to install Tesseract for everyone on the computer, or just yourself.
+
+![](`r tes_3`)
+
+On the following page you will choose what languages you want to be able to run OCR on. **If you plan to run OCR on anything other than American English, you must select them here**. "Additional script data" works for handwriting, and "Additional language data" works for printed material. I recommend you just install everything unless space is an issue. It will increase the install size from ~300mb to ~900mb. 
+
+![](`r tes_4`)
+
+On the next page, select where you will be installing Tesseract. **You should leave it as the default unless you have a very good reason not to and know how to re-assign path variables on your machine**.
+
+![](`r tes_5`)
+
+Continue on until the installer finishes.
+
+### Verifying your install
+
+To verify Tesseract was installed correctly, open your Windows menu and launch `Windows PowerShell`.
+
+![](`r tes_6`)
+
+In the resulting window, copy the following command and press enter: `& "C:\Program Files\Tesseract-OCR\tesseract.exe" --help-extra`. If you see the help message, you are all set!
+
+![](`r tes_7`)
+
+### Installation troubleshooting
