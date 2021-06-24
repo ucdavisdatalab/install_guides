@@ -97,3 +97,19 @@ To test everything is working launch DB Browser from the windows menu or from th
 ### Installation troubleshooting
 
 If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+## SpatiaLite
+
+### Introduction
+
+[SpatiaLite](https://www.gaia-gis.it/fossil/libspatialite/index){rel="noopener noreferrer" target="_blank"} is an extension to the lightweight SQLight database structure to allow for geospatial capabilities.
+
+### SpatiaLite on Windows
+
+SpatiaLite is nativly a linux tool, but there are community ports for Windows. We will be using the one provided by DB Browser, and installing it in conjunction with it. Please read our guide on DB Browser and finish that before starting this process.
+
+### Verifying your install
+
+### Installation troubleshooting
+
+If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
