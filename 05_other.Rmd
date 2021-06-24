@@ -1,6 +1,12 @@
 # Other Data Tools
 
 ```{r include=FALSE}
+# 7zip
+zip_1 = "./img/zip_1.jpg"
+zip_2 = "./img/zip_2.jpg"
+zip_3 = "./img/zip_3.jpg"
+zip_4 = "./img/zip_4.jpg"
+
 # OpenRefine images
 or_img01 = "./img/win_or_install_1.jpg"
 or_img02 = "./img/win_or_install_2.jpg"
@@ -29,6 +35,36 @@ tes_5 = "./img/win_tes_5.jpg"
 tes_6 = "./img/win_tes_6.jpg"
 tes_7 = "./img/win_tes_7.jpg"
 ```
+
+## 7zip
+
+### Introduction
+
+[7-zip](https://www.7-zip.org/){rel="noopener noreferrer" target="_blank"} is a free, open source, and cross-platform compression program. It can compress and unpack several formats with varying security and compression levels.
+
+### 7zip on Windows
+
+First navigate to the 7-zip download page and download the file for your version of windows (most likely 64bit). 
+
+![](`r zip_1`)
+
+Once it is done downloading, start the installer from your browser or downloads folder.
+
+![](`r zip_2`)
+
+7-zip will ask where you would like to install it, the default is fine. Press the `Install` button to continue.
+
+![](`r zip_3`)
+
+### Verifying your install
+
+To verify your instaliation, run "7-zip File Manager" from your start menu. If it opens, you're all set! You can also now call 7-zip from the right-click context menu (may require restart).
+
+![](`r zip_4`)
+
+### Installation troubleshooting
+
+If you are not able to successfully install OpenRefine on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
 
 ## OpenRefine
 
