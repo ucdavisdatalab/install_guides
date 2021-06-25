@@ -7,7 +7,7 @@ github-repo: ucdavisdatalab/install_guides
 url: "https://ucdavisdatalab.github.io/install_guides/"
 
 site: "bookdown::bookdown_site"
-knit: "bookdown::render_book"
+#knit: "bookdown::render_book"
 output:
   bookdown::gitbook:
     config:

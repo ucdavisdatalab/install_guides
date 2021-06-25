@@ -16,6 +16,13 @@ dbb_2 = "./img/win_dbb_2.jpg"
 dbb_3 = "./img/win_dbb_3.jpg"
 dbb_4 = "./img/win_dbb_4.jpg"
 dbb_5 = "./img/win_dbb_5.jpg"
+
+# spatialite gui
+sgui_1 = "./img/sgui_1.jpg"
+sgui_2 = "./img/sgui_2.jpg"
+sgui_3 = "./img/sgui_3.jpg"
+sgui_4 = "./img/sgui_4.jpg"
+sgui_5 = "./img/sgui_5.jpg"
 ```
 
 ## DBeaver (SQL Database Viewer)
@@ -93,6 +100,42 @@ One the installation is complete, you can press `Finish` to close the installer!
 ### Verifying your install
 
 To test everything is working launch DB Browser from the windows menu or from the install location (`C:\Program Files\DB Browser for SQLite` by default).
+
+### Installation troubleshooting
+
+If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+## SpatiaLite GUI
+
+### Introduction
+
+[SpatiaLite GUI](https://www.gaia-gis.it/gaia-sins/){rel="noopener noreferrer" target="_blank"} is a XXXX.
+
+### SpatiaLite GUI on Windows
+
+First navigate to the [SpatiaLite download page](){rel="noopener noreferrer" target="_blank"}, and look for "MS Windows binaries." Look for the version title "previous stable version" and click the link that matches your machine (most likely 64bit)[^2].
+
+[^2]: As of writing, the GUI is not available on the most recent release. You may want to check there as well, and download that if possible.
+
+![](`r sgui_1`)
+
+On the following page, click the link to download `spatialite_gui-NG-X.X.X-win-amd64.7z`. Once it has finished downloading, open the 7-zip archive from yuor browser or your download location. You will need 7-zip installed to open this archive. If you do not already have it installed, please see our guide on installing 7-zip in out "other Software" guide.
+
+![](`r sgui_2`)
+
+Once the archive is open, simply drag the containing folder to your desktop or other location of choice.
+
+![](`r sgui_3`)
+
+You can now run SpatiaLite by opening the folder, and running the `spatialite_gui` executable, no instillation needed.
+
+![](`r sgui_4`)
+
+### Verifying your install
+
+If SpatiaLite launches when you try to run it, you're all set!
+
+![](`r sgui_5`)
 
 ### Installation troubleshooting
 
