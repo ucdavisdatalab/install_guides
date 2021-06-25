@@ -42,7 +42,7 @@ tes_7 = "./img/win_tes_7.jpg"
 
 [7-zip](https://www.7-zip.org/){rel="noopener noreferrer" target="_blank"} is a free, open source, and cross-platform compression program. It can compress and unpack several formats with varying security and compression levels.
 
-### 7zip on Windows
+### 7-zip on Windows
 
 First navigate to the 7-zip download page and download the file for your version of windows (most likely 64bit). 
 

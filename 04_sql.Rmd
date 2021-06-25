@@ -109,7 +109,7 @@ If you are not able to successfully install DBeaver on your own, please attend D
 
 ### Introduction
 
-[SpatiaLite GUI](https://www.gaia-gis.it/gaia-sins/){rel="noopener noreferrer" target="_blank"} is a XXXX.
+[SpatiaLite GUI](https://www.gaia-gis.it/gaia-sins/){rel="noopener noreferrer" target="_blank"} is a free, open-source tool for storing and working with spatial data in a SQLite database.
 
 ### SpatiaLite GUI on Windows
 
