@@ -130,6 +130,10 @@ Run the installer just as you did for the R download.
 
 ![](`r r_img17`)
 
+### Updating R/RStudio on Windows
+
+Over time updates to R and R Studio will necessitate and update. **Packages you use may not update with R**! If you rely heavily on a package for a project, it is highly recommended you save your current configuration of R and R Studio before updating. If there was a major version change, you will also need to re-install all of your packages. Upgrading R and R Studio follows the same process as installing it in the first place. You can simply install the new versions on your machine. As long as you do not remove the old instances of R as part of this process, you would be able to revert to a previous version.
+
 ### R/RStudio on Mac
 
 If you are installing R/RStudio on a Mac, there is no extra configuration. Simply go the download pages for [R](https://www.r-project.org/){rel="noopener noreferrer" target="_blank"} and [RStudio](https://rstudio.com/){rel="noopener noreferrer" target="_blank"} and choose the latest version for mac. Run the installer package when it is finished downloading. If you receive an error regarding the app being from an unidentified developer, please [follow the instructions here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac){rel="noopener noreferrer" target="_blank"}.
@@ -211,6 +215,7 @@ Two things to note for Windows users:
 ### Introduction
 
 R Tools is a bundle of programs on Windows that allows R to build packages from local source files, rather than installing through CRAN. The vast majority of the time this is unnecessary, but some circumstances require it. Mac users do not need to install R Tools. 
+
 ### RTools on Windows
 
 First, navigate to the R tools website at [https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/){rel="noopener noreferrer" target="_blank"}.
