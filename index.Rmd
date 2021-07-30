@@ -10,6 +10,7 @@ site: "bookdown::bookdown_site"
 #knit: "bookdown::render_book"
 output:
   bookdown::gitbook:
+    css: custom_css.css
     config:
       toc:
         before: |
