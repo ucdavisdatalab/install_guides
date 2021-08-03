@@ -5,8 +5,8 @@
 db_1 = "./img/win_db_1.jpg"
 db_2 = "./img/win_db_2.jpg"
 db_3 = "./img/win_db_3.jpg"
-db_4 = "./img/win_db_3.jpg"
-db_5 = "./img/win_db_3.jpg"
+db_4 = "./img/win_db_4.jpg"
+db_5 = "./img/win_db_5.jpg"
 db_6 = "./img/win_db_6.jpg"
 db_7 = "./img/win_db_7.jpg"
 
@@ -35,31 +35,31 @@ sgui_5 = "./img/sgui_5.jpg"
 
 First navigate to the [download page](https://dbeaver.io/download/){rel="noopener noreferrer" target="_blank"} on DBeaver's website. Scroll down and click on the installer link to download it.
 
-![](`r db_1`)
+![](`r db_1` "DBeaver download page")
 
 After the install finishes, click on the executable to launch the installer.
 
-![](`r db_2`)
+![](`r db_2` "web drowser showing DBeaver downloading")
 
 Once you select your language, the installer will prompt you to close all other applications, and hit next. On the following page, accept the license agreement by clicking `I Agree`.
 
-![](`r db_3`)
+![](`r db_3` "Dbeaver license agreement")
 
 On the next page, select if you would like to install DBeaver for all users on your machine, or just you. In most cases it is fine to install for everyone.
 
-![](`r db_4`)
+![](`r db_4` "Dbeaver user selection")
 
 Depending on your selection, the installer may need to re-start with administrator privileges. Enter your previous options again until you reach the "Choose Components" page. Once here, you can leave the default settings and click `Next`.
 
-![](`r db_5`)
+![](`r db_5` "Dbeaver component selection")
 
 The next page will ask where you would like to install DBeaver. The default location should work for most people, click `Next` to continue. The same is the true of the next page regarding the start menu location, you can click `Install` to start the installation process.
 
-![](`r db_6`)
+![](`r db_6` "Dbeaver location selection")
 
 Once the installation is complete, you can click `Finish` to exit the installer.
 
-![](`r db_7`)
+![](`r db_7` "Dbeaver finish screen")
 
 ### DBeaver on Mac
 
@@ -77,23 +77,23 @@ If you are not able to successfully install DBeaver on your own, please attend D
 
 First head to the [DB Browser download page](https://sqlitebrowser.org/dl/), and select the version that matches your system. On Windows this is most likely the 64-bit standard installer.
 
-![](`r dbb_1`)
+![](`r dbb_1` "DB browser download page")
 
 Once the download has finished, start the installer from the browser or your download location.
 
-![](`r dbb_2`)
+![](`r dbb_2` "DB browser download finished in web browser")
 
 Once you have started the installer, press the `Next` button to continue.
 
-![](`r dbb_3`)
+![](`r dbb_3` "DB browser install wizard")
 
 On the next screen, accept the license agreement and press `Next`. The following page will ask you if you would like to place shortcuts anywhere. Desktop will place icons on your desktop, while Program Menu will add options to your right click menu. You can choose to have these if you wish, I will not. Press `Next` once you have decided.
 
-![](`r dbb_4`)
+![](`r dbb_4` "DB browser shortcut options")
 
 On the following screen, you will be asked to select what components you want to install and where. You can safely keep the defaults and continue. Press `Install` on the following page.
 
-![](`r dbb_5`)
+![](`r dbb_5` "DB browser components options")
 
 One the installation is complete, you can press `Finish` to close the installer!
 
@@ -117,25 +117,25 @@ First navigate to the [SpatiaLite download page](){rel="noopener noreferrer" tar
 
 [^2]: As of writing, the GUI is not available on the most recent release. You may want to check there as well, and download that if possible.
 
-![](`r sgui_1`)
+![](`r sgui_1` "spatialgui homepage")
 
 On the following page, click the link to download `spatialite_gui-NG-X.X.X-win-amd64.7z`. Once it has finished downloading, open the 7-zip archive from yuor browser or your download location. You will need 7-zip installed to open this archive. If you do not already have it installed, please see our guide on installing 7-zip in out "other Software" guide.
 
-![](`r sgui_2`)
+![](`r sgui_2` "spatialgui download page")
 
 Once the archive is open, simply drag the containing folder to your desktop or other location of choice.
 
-![](`r sgui_3`)
+![](`r sgui_3` "zip archive with arrow dragging files onto desktop")
 
 You can now run SpatiaLite by opening the folder, and running the `spatialite_gui` executable, no instillation needed.
 
-![](`r sgui_4`)
+![](`r sgui_4` "file browser starting the spatialgui program")
 
 ### Verifying your install
 
 If SpatiaLite launches when you try to run it, you're all set!
 
-![](`r sgui_5`)
+![](`r sgui_5` "start screen of spatialgui")
 
 ### Installation troubleshooting
 

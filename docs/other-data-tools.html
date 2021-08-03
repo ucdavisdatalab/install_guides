@@ -24,7 +24,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2021-06-29" />
+<meta name="date" content="2021-08-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -57,6 +57,7 @@
 
 
 
+<link rel="stylesheet" href="custom_css.css" type="text/css" />
 </head>
 
 <body>
@@ -229,16 +230,16 @@
 <div id="zip-on-windows" class="section level3" number="5.1.2">
 <h3><span class="header-section-number">5.1.2</span> 7-zip on Windows</h3>
 <p>First navigate to the 7-zip download page and download the file for your version of windows (most likely 64bit).</p>
-<p><img src="img/zip_1.jpg" /></p>
+<p><img src="img/zip_1.jpg" title="7-zip download page" /></p>
 <p>Once it is done downloading, start the installer from your browser or downloads folder.</p>
-<p><img src="img/zip_2.jpg" /></p>
+<p><img src="img/zip_2.jpg" title="web browser with finished 7-zip download" /></p>
 <p>7-zip will ask where you would like to install it, the default is fine. Press the <code>Install</code> button to continue.</p>
-<p><img src="img/zip_3.jpg" /></p>
+<p><img src="img/zip_3.jpg" title="7-zip installer location selection" /></p>
 </div>
 <div id="verifying-your-install-9" class="section level3" number="5.1.3">
 <h3><span class="header-section-number">5.1.3</span> Verifying your install</h3>
 <p>To verify your instaliation, run “7-zip File Manager” from your start menu. If it opens, you’re all set! You can also now call 7-zip from the right-click context menu (may require restart).</p>
-<p><img src="img/zip_4.jpg" /></p>
+<p><img src="img/zip_4.jpg" title="7-zip browser window" /></p>
 </div>
 <div id="installation-troubleshooting-10" class="section level3" number="5.1.4">
 <h3><span class="header-section-number">5.1.4</span> Installation troubleshooting</h3>
@@ -254,15 +255,15 @@
 <div id="openrefine-on-windows" class="section level3" number="5.2.2">
 <h3><span class="header-section-number">5.2.2</span> OpenRefine on Windows</h3>
 <p>Open your web browser of choice and navigate to the OpenRefine homepage at <a href="https://openrefine.org/" rel="noopener noreferrer" target="_blank">https://openrefine.org/</a>. Click on the download button in the left sidebar.</p>
-<p><img src="img/win_or_install_1.jpg" /></p>
+<p><img src="img/win_or_install_1.jpg" title="openrefine home page" /></p>
 <p>On the download page, scroll to the latest version of OpenRefine and select the <strong>Windows kit</strong>. If you are unsure if you have Java installed on your system, choose the <strong>Windows kit with embedded Java</strong> instead.</p>
-<p><img src="img/win_or_install_2.jpg" /></p>
+<p><img src="img/win_or_install_2.jpg" title="openrefine download page" /></p>
 <p>Once the download has completed, open the zip and move the contents to a convenient location on your computer.</p>
-<p><img src="img/win_or_install_3.jpg" /></p>
+<p><img src="img/win_or_install_3.jpg" title="7-zip archive with arrow dragging openrefine files to desktop" /></p>
 <p>Open the resulting directory, and double click on the <strong>openrefine.exe</strong> executable.</p>
-<p><img src="img/win_or_install_4.jpg" /></p>
+<p><img src="img/win_or_install_4.jpg" title="file browser highlighting openrefine executable" /></p>
 <p>The OpenRefine executable will start a terminal window, and shortly after launch a tab in your default web browser with the OpenRefine interface.</p>
-<p><img src="img/win_or_install_5.jpg" /></p>
+<p><img src="img/win_or_install_5.jpg" title="openrefine running in web browser" /></p>
 </div>
 <div id="openrefine-on-mac" class="section level3" number="5.2.3">
 <h3><span class="header-section-number">5.2.3</span> OpenRefine on Mac</h3>
@@ -271,17 +272,17 @@
 <div id="verifying-your-install-10" class="section level3" number="5.2.4">
 <h3><span class="header-section-number">5.2.4</span> Verifying your install</h3>
 <p>To verify everything is working, first start Openrefine. It will open a page in your browser of choice that resembles the following.</p>
-<p><img src="img/win_or_install_6.jpg" /></p>
+<p><img src="img/win_or_install_6.jpg" title="openrefine create project page" /></p>
 <p>Click the <code>Choose Files</code> button, and enter <a href="https://raw.githubusercontent.com/ucdavisdatalab/research-toolkits/main/data/job_board_errors.csv" rel="noopener noreferrer" target="_blank">this dataset</a> (you can just put in the URL). Click <code>Next</code>.</p>
-<p><img src="img/win_or_install_7.jpg" /></p>
+<p><img src="img/win_or_install_7.jpg" title="openrefine create project page with data file selected" /></p>
 <p>Openrefine will load in the data and present you with a preview. The defaults should be fine. Click <code>Create Project</code> in the upper right hand corner.</p>
-<p><img src="img/win_or_install_8.jpg" /></p>
+<p><img src="img/win_or_install_8.jpg" title="openrefine data import page" /></p>
 <p>You will then be presented with the Openrefine working area. Click the arrow next to the <code>What sector ...</code> column and select <code>Facet -&gt; Text facet</code>.</p>
-<p><img src="img/win_or_install_9.jpg" /></p>
+<p><img src="img/win_or_install_9.jpg" title="openrefine data window showing imported data" /></p>
 <p>In the left hand menu, click the <code>Cluster</code> button.</p>
-<p><img src="img/win_or_install_10.jpg" /></p>
+<p><img src="img/win_or_install_10.jpg" title="openrefine data window showing imported data and facet menu" /></p>
 <p>In the following menu, for method select <code>nearest neighbor</code>. Openrefine will look through that column for any strings that are similar, and show you. This can be helpful for finding typos. Here, we see there are two misspellings of “Academia”. Click the Check-box in the <code>Merge?</code> column, then select <code>Merge Selected &amp; Close</code>. Openrefine will change all strings in the <code>Values in Cluster</code> column to match the <code>New Cell Value</code>. If that all worked, Openrefine is working!</p>
-<p><img src="img/win_or_install_11.jpg" /></p>
+<p><img src="img/win_or_install_11.jpg" title="openrefine text cluster menu" /></p>
 </div>
 <div id="installation-troubleshooting-11" class="section level3" number="5.2.5">
 <h3><span class="header-section-number">5.2.5</span> Installation troubleshooting</h3>
@@ -294,17 +295,17 @@
 <div id="qgis-on-windows" class="section level3" number="5.3.1">
 <h3><span class="header-section-number">5.3.1</span> Qgis on Windows</h3>
 <p>First visit the <a href="https://www.qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">download page</a> for Qgis and select the version for your machine. This will most likely be the 64-bit version.</p>
-<p><img src="img/win_qgis_1.jpg" /></p>
+<p><img src="img/win_qgis_1.jpg" title="Qgis download page" /></p>
 <p>Once the download has finished, launch the installer from your browser or downloads folder.</p>
-<p><img src="img/win_qgis_2.jpg" /></p>
+<p><img src="img/win_qgis_2.jpg" title="web browser showing finished qgis download" /></p>
 <p>On the first page of the installer, select “Express Desktop Install” and press <code>Next</code>. When prompted what components you would like to install, keep the default. The installer may say you have unmet dependencies. If this is the case, install them as well and accept the license agreements. It will then start to download the required components.</p>
-<p><img src="img/win_qgis_3.jpg" /></p>
+<p><img src="img/win_qgis_3.jpg" title="qgis install wizard" /></p>
 <p>Once the download is complete, it will start to install. If this is the first time you are installing Qgis, it will stop on the last page telling you it is finished. If you are updating an installation, it will close silently once it finishes.</p>
 </div>
 <div id="verifying-your-install-11" class="section level3" number="5.3.2">
 <h3><span class="header-section-number">5.3.2</span> Verifying your install</h3>
 <p>Launch Qgis from your programs menu. If the main page comes up, you should be good!</p>
-<p><img src="img/win_qgis_4.jpg" /></p>
+<p><img src="img/win_qgis_4.jpg" title="qgis main page" /></p>
 </div>
 <div id="installation-troubleshooting-12" class="section level3" number="5.3.3">
 <h3><span class="header-section-number">5.3.3</span> Installation troubleshooting</h3>
@@ -320,23 +321,23 @@
 <div id="tesseract-on-windows" class="section level3" number="5.4.2">
 <h3><span class="header-section-number">5.4.2</span> Tesseract on Windows</h3>
 <p>Tesseract is natively a linux tool, but community maintained ports exist for Windows. We will be using the binaries prepared by the <a href="https://github.com/UB-Mannheim/tesseract/wiki" rel="noopener noreferrer" target="_blank">Mannheim University Library (UB Mannheim)</a> to install Tesseract today. First head to their <a href="https://github.com/UB-Mannheim/tesseract/wiki" rel="noopener noreferrer" target="_blank">github page</a> and scroll down to “The latest installers can be downloaded here.” Download the version that matches your machine (most likely 64 bit).</p>
-<p><img src="img/win_tes_1.jpg" /></p>
+<p><img src="img/win_tes_1.jpg" title="tesseract github repo" /></p>
 <p>Once the download has finished, launch the installer from your browser or downloads folder.</p>
-<p><img src="img/win_tes_2.jpg" /></p>
+<p><img src="img/win_tes_2.jpg" title="web browser showing finished tesseract download" /></p>
 <p>Once the installer has started, select your language and continue to the second page by pressing <code>Next &gt;</code>. Accept the license agreement by pressing <code>I Agree</code>. On the following page, select if you would like to install Tesseract for everyone on the computer, or just yourself.</p>
-<p><img src="img/win_tes_3.jpg" /></p>
+<p><img src="img/win_tes_3.jpg" title="tesseract installer user selection" /></p>
 <p>On the following page you will choose what languages you want to be able to run OCR on. <strong>If you plan to run OCR on anything other than American English, you must select them here</strong>. “Additional script data” works for handwriting, and “Additional language data” works for printed material. I recommend you just install everything unless space is an issue. It will increase the install size from ~300mb to ~900mb.</p>
-<p><img src="img/win_tes_4.jpg" /></p>
+<p><img src="img/win_tes_4.jpg" title="tesseract component selection" /></p>
 <p>On the next page, select where you will be installing Tesseract. <strong>You should leave it as the default unless you have a very good reason not to and know how to re-assign path variables on your machine</strong>.</p>
-<p><img src="img/win_tes_5.jpg" /></p>
+<p><img src="img/win_tes_5.jpg" title="tesseract install location" /></p>
 <p>Continue on until the installer finishes.</p>
 </div>
 <div id="verifying-your-install-12" class="section level3" number="5.4.3">
 <h3><span class="header-section-number">5.4.3</span> Verifying your install</h3>
 <p>To verify Tesseract was installed correctly, open your Windows menu and launch <code>Windows PowerShell</code>.</p>
-<p><img src="img/win_tes_6.jpg" /></p>
+<p><img src="img/win_tes_6.jpg" title="windows search menu selecting the Windows PowerShell" /></p>
 <p>In the resulting window, copy the following command and press enter: <code>&amp; "C:\Program Files\Tesseract-OCR\tesseract.exe" --help-extra</code>. If you see the help message, you are all set!</p>
-<p><img src="img/win_tes_7.jpg" /></p>
+<p><img src="img/win_tes_7.jpg" title="PowerShell starting tesseract" /></p>
 </div>
 <div id="installation-troubleshooting-13" class="section level3" number="5.4.4">
 <h3><span class="header-section-number">5.4.4</span> Installation troubleshooting</h3>

@@ -64,71 +64,71 @@ Follow these step-by-step instructions to install R and RStudio on a Windows mac
 
 First open your internet browser of choice, and navigate to [https://www.r-project.org/](https://www.r-project.org/){rel="noopener noreferrer" target="_blank"}. Click on **download R**.
 
-![](`r r_img01`)
+![](`r r_img01` "R project homepage")
 
 On the following page, select the link under whatever location is closest to you for the best download speed (though any will work).
 
-![](`r r_img02`)
+![](`r r_img02` "R download mirror page")
 
 Next, click the **Download R for Windows** link.
 
-![](`r r_img03`)
+![](`r r_img03` "R download page")
 
 Click on the link **base** to go to the download page.
 
-![](`r r_img04`)
+![](`r r_img04` "R version selection")
 
 Finally, click **Download R X.X.X for Windows** to download the installer.
 
-![](`r r_img05`)
+![](`r r_img05` "Download link for R")
 
 When the download is complete, run the R installer. This will look slightly different depending on your browser.
 
-![](`r r_img06`)
+![](`r r_img06` "Web browser showing the finished R download")
 
 Select your language and then accept the license agreement by hitting **Next >**.
 
-![](`r r_img07`)
+![](`r r_img07` "R license window")
 
 Leave the default install location and select **Next >**.
 
-![](`r r_img08`)
+![](`r r_img08` "R install location selection")
 
 If you know what kind of machine you are on, you can specify if you want the 32 or 64 bit version of R. If you do not know, it is safe to install both.
 
-![](`r r_img09`)
+![](`r r_img09` "version selection page")
 
 Keep the default startup options and hit **Next >**.
 
-![](`r r_img10`)
+![](`r r_img10` "startup options page")
 
 You most likely will not want an R shortcut on your desktop, as you will almost certainly use RStudio as an interface. You can still have one if you would like. Otherwise, accept the defaults and hit **Next >**.
 
-![](`r r_img11`)
+![](`r r_img11` "shortcut options page")
 
 Wait for the instillation to complete.
 
-![](`r r_img12`)
+![](`r r_img12` "R install progress bar")
 
 Once it is done, hit **Finish**. You've now installed R! However, we still need to install RStudio separately.
 
-![](`r r_img13`)
+![](`r r_img13` "finished R install page")
 
 Navigate to the RStudio homepage at [https://rstudio.com/](https://rstudio.com/){rel="noopener noreferrer" target="_blank"} and click the download button.
 
-![](`r r_img14`)
+![](`r r_img14` "R studio homepage")
 
 Scroll down and select the free version to download. If you are using RStudio for commercial purposes you will need to look into RStudio's licensing terms to see if you need to pay for the pro version.
 
-![](`r r_img15`)
+![](`r r_img15` "R studio version selection webpage with the desktop option highlighted")
 
 Download the RStudio installer for your machine.
 
-![](`r r_img16`)
+![](`r r_img16` "R studio download button")
 
 Run the installer just as you did for the R download.
 
-![](`r r_img17`)
+![](`r r_img17` "web browser showing finished R studio download")
 
 ### Updating R/RStudio on Windows
 
@@ -142,7 +142,7 @@ If you are installing R/RStudio on a Mac, there is no extra configuration. Simpl
 
 Once you have installed **both** R and RStudio, you should be able to run RStudio on your machine. You can verify your install is working by opening RStudio and typing `paste("Hello World!")` into the console as shown below. If the code runs you should see a response that says `[1] Hello World!`. If that works you are all set!
 
-![](`r r_img91`)
+![](`r r_img91` "R studio environment")
 
 ### Installation troubleshooting
 
@@ -168,37 +168,37 @@ Not all packages are available on CRAN, especially very new or very old packages
 
 First install the `remotes` package by running `install.packages("remotes")` in the R console. If it installed correctly, you will see `package ‘remotes’ successfully unpacked and MD5 sums checked`.
 
-![](`r rpkg_img01`)
+![](`r rpkg_img01` "R studio console")
 
 Once `remotes` is installed, you can install packages directly from an online repository. We will use `remotes`'s `install_github()` function to demonstrate. Let's try installing the handy [`wordcountaddin`](https://github.com/benmarwick/wordcountaddin){rel="noopener noreferrer" target="_blank"} for RStudio. First navigate to the package page on Github: [https://github.com/benmarwick/wordcountaddin](https://github.com/benmarwick/wordcountaddin){rel="noopener noreferrer" target="_blank"}.
 
-![](`r rpkg_img02`)
+![](`r rpkg_img02` "wordcount addin R package github page")
 
 Most packages that need to be installed from an online source will give you the code to do so in the readme of their repository. Another common package for installing from online repositories is called `devtools`, but this package contains many other functions we don't need for this task. You can replace `devtools` with `remotes` almost all of the time.
 
-![](`r rpkg_img03`)
+![](`r rpkg_img03` "wordcount addin install instructions")
 
 For our case, type `remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)` into the console and hit enter. You may be asked if you would like to update other packages. Enter `1` to try and update all. If this doesn't work, you can enter the command again and try `3` to ignore these updates.
 
-![](`r rpkg_img04`)
+![](`r rpkg_img04` "R console asking if you would like to update installed packages")
 
 Read the resulting install output. As long as it does not indicate anything failed to install, you're done!
 
-![](`r rpkg_img05`)
+![](`r rpkg_img05` "R consoel showing a sucsessful install")
 
 You can now use the helpful `wordcountaddin`! You can find it in the **Addins** dropdown above the editor pane.
 
-![](`r rpkg_img06`)
+![](`r rpkg_img06` "dropdown addin menu in R studio showing thr wordcount addin")
 
 ### Packages from Local Source
 
 On occasion it will be necessary to install an R package from a local **source** `.tar.gz` file. You would need to download this file yourself, then install it. For example, let's download then install the `mgcv` package from [https://cran.r-project.org/web/packages/mgcv/index.html](https://cran.r-project.org/web/packages/mgcv/index.html){rel="noopener noreferrer" target="_blank"}. First navigate to that page, and click on the download link next to **package source**.
 
-![](`r rpkg_img07`)
+![](`r rpkg_img07` "CRAR page for the MGCV R pacakge with the download link highlighted")
 
 Once the `.tar.gz` file is downloaded, leave it as it is, do not decompress it. Instead, find the file on your system and take note of it's location. On Windows you can shift-right click on it, then select **Copy as path**.
 
-![](`r rpkg_img08`)
+![](`r rpkg_img08` "windows context menu highlighting Copy as Path")
 
 In your R console, type in `install.packages("path/to/your/source_file.tar.gz", repos = NULL, type = "source")`. R will start installing the package from the local copy.
 
@@ -208,7 +208,7 @@ Two things to note for Windows users:
 
 2. If you are on windows, you will need to make sure your file path uses forward slashes (`/`) rather than back slashes (`\`).
 
-![](`r rpkg_img09`)
+![](`r rpkg_img09` "R console installing the local package")
 
 ## R Tools
 
@@ -220,41 +220,41 @@ R Tools is a bundle of programs on Windows that allows R to build packages from 
 
 First, navigate to the R tools website at [https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/){rel="noopener noreferrer" target="_blank"}.
 
-![](`r rt_img01`)
+![](`r rt_img01` "R tools download page")
 
 Scroll down to the download links and select the **rtoolsXX-x86_64.exe** link.
 
-![](`r rt_img02`)
+![](`r rt_img02` "Selecting the R tools version on the download page")
 
 Once the download has finished, run the R tools installer.
 
-![](`r rt_img03`)
+![](`r rt_img03` "web browser showing finished R tools download")
 
 On the first page of the installer, select a custom location if you would like, but otherwise press **Next >**.
 
-![](`r rt_img04`)
+![](`r rt_img04` "location select for R tools install")
 
 Leave the defaults for the additional tasks and hit **Next >**.
 
-![](`r rt_img05`)
+![](`r rt_img05` "Additional task options")
 
 On the next page, hit the install button and wait for it to complete.
 
-![](`r rt_img06`)
+![](`r rt_img06` "R tools install window")
 
 One the install is done, press **Finish**. You're not done yet though!
 
-![](`r rt_img07`)
+![](`r rt_img07` "finished R tools install")
 
 In order for R to make use of R tools, you need to add it to the `PATH` that R looks for tools on. To do this, open R or R Studio and type `writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")` in the console and press enter.
 
-![](`r rt_img08`)
+![](`r rt_img08` "R console checking R tools in installed")
 
 ### Verifying your install
 
 To verify R tools was installed successfully, first restart R to assure you are in a clean environment. You can do this by closing and re-opening your R or RStudio window. Afterwards, type `Sys.which("make")` (case sensitive!) into the console. If you see `"C:\\rtools40\\usr\\bin\\make.exe"` as a result you are all good!
 
-![](`r rt_img10`)
+![](`r rt_img10` "R console confirming R tools is on path")
 
 ### Installation troubleshooting
 

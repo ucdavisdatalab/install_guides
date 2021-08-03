@@ -46,21 +46,21 @@ tes_7 = "./img/win_tes_7.jpg"
 
 First navigate to the 7-zip download page and download the file for your version of windows (most likely 64bit). 
 
-![](`r zip_1`)
+![](`r zip_1` "7-zip download page")
 
 Once it is done downloading, start the installer from your browser or downloads folder.
 
-![](`r zip_2`)
+![](`r zip_2` "web browser with finished 7-zip download")
 
 7-zip will ask where you would like to install it, the default is fine. Press the `Install` button to continue.
 
-![](`r zip_3`)
+![](`r zip_3` "7-zip installer location selection")
 
 ### Verifying your install
 
 To verify your instaliation, run "7-zip File Manager" from your start menu. If it opens, you're all set! You can also now call 7-zip from the right-click context menu (may require restart).
 
-![](`r zip_4`)
+![](`r zip_4` "7-zip browser window")
 
 ### Installation troubleshooting
 
@@ -76,23 +76,23 @@ OpenRefine is an open source tool used to clean and pre-process messy data. Whil
 
 Open your web browser of choice and navigate to the OpenRefine homepage at [https://openrefine.org/](https://openrefine.org/){rel="noopener noreferrer" target="_blank"}. Click on the download button in the left sidebar.
 
-![](`r or_img01`)
+![](`r or_img01` "openrefine home page")
 
 On the download page, scroll to the latest version of OpenRefine and select the **Windows kit**. If you are unsure if you have Java installed on your system, choose the **Windows kit with embedded Java** instead.
 
-![](`r or_img02`)
+![](`r or_img02` "openrefine download page")
 
 Once the download has completed, open the zip and move the contents to a convenient location on your computer.
 
-![](`r or_img03`)
+![](`r or_img03` "7-zip archive with arrow dragging openrefine files to desktop")
 
 Open the resulting directory, and double click on the **openrefine.exe** executable.
 
-![](`r or_img04`)
+![](`r or_img04` "file browser highlighting openrefine executable")
 
 The OpenRefine executable will start a terminal window, and shortly after launch a tab in your default web browser with the OpenRefine interface.
  
-![](`r or_img05`)
+![](`r or_img05` "openrefine running in web browser")
 
 ### OpenRefine on Mac
 
@@ -102,27 +102,27 @@ If you are installing OpenRefine on a Mac, there is no extra configuration. Simp
 
 To verify everything is working, first start Openrefine. It will open a page in your browser of choice that resembles the following.
 
-![](`r or_img06`)
+![](`r or_img06` "openrefine create project page")
 
 Click the `Choose Files` button, and enter [this dataset](https://raw.githubusercontent.com/ucdavisdatalab/research-toolkits/main/data/job_board_errors.csv){rel="noopener noreferrer" target="_blank"} (you can just put in the URL). Click `Next`.
 
-![](`r or_img07`)
+![](`r or_img07` "openrefine create project page with data file selected")
 
 Openrefine will load in the data and present you with a preview. The defaults should be fine. Click `Create Project` in the upper right hand corner.
 
-![](`r or_img08`)
+![](`r or_img08` "openrefine data import page")
 
 You will then be presented with the Openrefine working area. Click the arrow next to the `What sector ...` column and select `Facet -> Text facet`.
 
-![](`r or_img09`)
+![](`r or_img09` "openrefine data window showing imported data")
 
 In the left hand menu, click the `Cluster` button.
 
-![](`r or_img10`)
+![](`r or_img10` "openrefine data window showing imported data and facet menu")
 
 In the following menu, for method select `nearest neighbor`. Openrefine will look through that column for any strings that are similar, and show you. This can be helpful for finding typos. Here, we see there are two misspellings of "Academia". Click the Check-box in the `Merge?` column, then select `Merge Selected & Close`. Openrefine will change all strings in the `Values in Cluster` column to match the `New Cell Value`. If that all worked, Openrefine is working!
 
-![](`r or_img11`)
+![](`r or_img11` "openrefine text cluster menu")
 
 ### Installation troubleshooting
 
@@ -136,15 +136,15 @@ If you are not able to successfully install OpenRefine on your own, please atten
 
 First visit the [download page](https://www.qgis.org/en/site/forusers/download.html){rel="noopener noreferrer" target="_blank"} for Qgis and select the version for your machine. This will most likely be the 64-bit version.
 
-![](`r qgis_1`)
+![](`r qgis_1` "Qgis download page")
 
 Once the download has finished, launch the installer from your browser or downloads folder.
 
-![](`r qgis_2`)
+![](`r qgis_2` "web browser showing finished qgis download")
 
 On the first page of the installer, select "Express Desktop Install" and press `Next`. When prompted what components you would like to install, keep the default. The installer may say you have unmet dependencies. If this is the case, install them as well and accept the license agreements. It will then start to download the required components.
 
-![](`r qgis_3`)
+![](`r qgis_3` "qgis install wizard")
 
 Once the download is complete, it will start to install. If this is the first time you are installing Qgis, it will stop on the last page telling you it is finished. If you are updating an installation, it will close silently once it finishes.
 
@@ -152,7 +152,7 @@ Once the download is complete, it will start to install. If this is the first ti
 
 Launch Qgis from your programs menu. If the main page comes up, you should be good!
 
-![](`r qgis_4`)
+![](`r qgis_4` "qgis main page")
 
 ### Installation troubleshooting
 
@@ -168,23 +168,23 @@ If you are not able to successfully install OpenRefine on your own, please atten
 
 Tesseract is natively a linux tool, but community maintained ports exist for Windows. We will be using the binaries prepared by the [Mannheim University Library (UB Mannheim)](https://github.com/UB-Mannheim/tesseract/wiki){rel="noopener noreferrer" target="_blank"} to install Tesseract today. First head to their [github page](https://github.com/UB-Mannheim/tesseract/wiki){rel="noopener noreferrer" target="_blank"} and scroll down to "The latest installers can be downloaded here." Download the version that matches your machine (most likely 64 bit).
 
-![](`r tes_1`)
+![](`r tes_1` "tesseract github repo")
 
 Once the download has finished, launch the installer from your browser or downloads folder.
 
-![](`r tes_2`)
+![](`r tes_2` "web browser showing finished tesseract download")
 
 Once the installer has started, select your language and continue to the second page by pressing `Next >`. Accept the license agreement by pressing `I Agree`. On the following page, select if you would like to install Tesseract for everyone on the computer, or just yourself.
 
-![](`r tes_3`)
+![](`r tes_3` "tesseract installer user selection")
 
 On the following page you will choose what languages you want to be able to run OCR on. **If you plan to run OCR on anything other than American English, you must select them here**. "Additional script data" works for handwriting, and "Additional language data" works for printed material. I recommend you just install everything unless space is an issue. It will increase the install size from ~300mb to ~900mb. 
 
-![](`r tes_4`)
+![](`r tes_4` "tesseract component selection")
 
 On the next page, select where you will be installing Tesseract. **You should leave it as the default unless you have a very good reason not to and know how to re-assign path variables on your machine**.
 
-![](`r tes_5`)
+![](`r tes_5` "tesseract install location")
 
 Continue on until the installer finishes.
 
@@ -192,11 +192,11 @@ Continue on until the installer finishes.
 
 To verify Tesseract was installed correctly, open your Windows menu and launch `Windows PowerShell`.
 
-![](`r tes_6`)
+![](`r tes_6` "windows search menu selecting the Windows PowerShell")
 
 In the resulting window, copy the following command and press enter: `& "C:\Program Files\Tesseract-OCR\tesseract.exe" --help-extra`. If you see the help message, you are all set!
 
-![](`r tes_7`)
+![](`r tes_7` "PowerShell starting tesseract")
 
 ### Installation troubleshooting
 
