@@ -24,7 +24,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2021-08-03" />
+<meta name="date" content="2021-08-30" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -275,7 +275,9 @@
 </div>
 <div id="jupyter-from-the-terminal" class="section level3" number="3.2.2">
 <h3><span class="header-section-number">3.2.2</span> Jupyter from the terminal</h3>
-<p>Regardless of your operating system, the easiest way to install jupyter notebooks is from the terminal. Start a terminal window using the <code>conda</code> or <code>venv</code> environment of your choice. Once activated, enter <code>conda install -c conda-forge jupyterlab</code> if on conda, or <code>pip install jupyterlab</code> otherwise. It will ask for confirmation that you want to install the listed components. Input <code>Y</code> and press enter to continue.</p>
+<p>Regardless of your operating system, the easiest way to install jupyter notebooks is from the terminal. If you are using Anaconda (see the guide in this reader), you can start a terminal by opening the Anaconda Navigator, going to the environments tab, and launching a terminal window using the “Open Terminal” option in your chosen environment.</p>
+<p><img src="img/win_anaconda_11.jpg" title="Anaconda navigator home page" /></p>
+<p>If you are not using Anaconda, start a terminal window and activate an environment of your choice, typically using <code>conda</code> or <code>venv</code>. Once activated, enter <code>conda install -c conda-forge jupyterlab</code> if on conda, or <code>pip install jupyterlab</code> otherwise. It will ask for confirmation that you want to install the listed components. Input <code>Y</code> and press enter to continue.</p>
 <p><img src="img/win_jup_1.jpg" title="installing jupyter lab on the terminal" /></p>
 <p>The terminal will then start downloading and installing all the components, this can take some time. once it has finished you can start jupyter by entering <code>jupyter-lab</code>. Your terminal will start hosting a jupyter lab instance, and should open a tab in your preferred browser. You will not be able to use this terminal for other purposes while jupyter is running, but you can always start another. If a tab does not auto start, you can use the provided links in the terminal to open one.</p>
 <p><img src="img/win_jup_2.jpg" title="starting jupyter lab highlighting the web link" /></p>

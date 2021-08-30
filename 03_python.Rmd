@@ -106,7 +106,11 @@ Jupyter Notebooks are a common interactive development environment for python, a
 
 ### Jupyter from the terminal
 
-Regardless of your operating system, the easiest way to install jupyter notebooks is from the terminal. Start a terminal window using the `conda` or `venv` environment of your choice. Once activated, enter `conda install -c conda-forge jupyterlab` if on conda, or `pip install jupyterlab` otherwise. It will ask for confirmation that you want to install the listed components. Input `Y` and press enter to continue.
+Regardless of your operating system, the easiest way to install jupyter notebooks is from the terminal. If you are using Anaconda (see the guide in this reader), you can start a terminal by opening the Anaconda Navigator, going to the environments tab, and launching a terminal window using the "Open Terminal" option in your chosen environment.
+
+![](`r anaconda_11` "Anaconda navigator home page")
+
+If you are not using Anaconda, start a terminal window and activate an environment of your choice, typically using `conda` or `venv`. Once activated, enter `conda install -c conda-forge jupyterlab` if on conda, or `pip install jupyterlab` otherwise. It will ask for confirmation that you want to install the listed components. Input `Y` and press enter to continue.
 
 ![](`r jup_1` "installing jupyter lab on the terminal")
 
