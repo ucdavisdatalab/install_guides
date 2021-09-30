@@ -212,7 +212,7 @@ the appropriate directions below:
 
 #### Windows version larger than (or equal to) 19041
 
-In the start menu, search for "Powershell" and click on it.
+In the start menu, search for "Powershell", right click and select "run as administrator".
 
 ![](`r win_search_powershell` "Windows search menu for PowerShell")
 
