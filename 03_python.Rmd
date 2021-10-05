@@ -80,6 +80,17 @@ One the next page it will prompt you to download PyCharm. PyCharm is an interact
 
 ### Anaconda on Mac
 
+To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on mac, first navigate to their site, select products, then individual edition.
+
+![](`r anaconda_1` "Anaconda homepage selecting the individual edition for download")
+
+Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). For mac, select the graphical 64-Bit installer.
+
+![](`r anaconda_2` "Anaconda download operating system selection")
+
+Once the download has finished, run the executable. You will need to select OK to agree to the license, and to allow Anaconda-Nagivator access to control Terminal. 
+
+
 ### Verifying your install
 
 To verify Anaconda is working on your system, launch the Anaconda Navigator from your programs menu. This should start the main navigator window seen below.
