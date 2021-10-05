@@ -15,6 +15,7 @@ anaconda_10 = "./img/win_anaconda_10.jpg"
 anaconda_11 = "./img/win_anaconda_11.jpg"
 anaconda_12 = "./img/win_anaconda_12.jpg"
 anaconda_13 = "./img/win_anaconda_13.jpg"
+mac_anaconda_1 = "./img/mac_anaconda_1.png"
 
 # jupyter
 jup_1 = "./img/win_jup_1.jpg"
@@ -90,6 +91,7 @@ Scroll down on this page and near the bottom you will be able to select your pre
 
 Once the download has finished, run the executable. You will need to select OK to agree to the license, and to allow Anaconda-Nagivator access to control Terminal. 
 
+![](`r mac_anaconda_1` "Mac asking for anaconda permissions")
 
 ### Verifying your install
 
