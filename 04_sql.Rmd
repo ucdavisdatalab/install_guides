@@ -23,6 +23,22 @@ sgui_2 = "./img/sgui_2.jpg"
 sgui_3 = "./img/sgui_3.jpg"
 sgui_4 = "./img/sgui_4.jpg"
 sgui_5 = "./img/sgui_5.jpg"
+
+# SQLiteStudio Mac
+sqls_m1 = "./img/SQLiteStudio_Mac01_DownloadPage.png"
+sqls_m2 = "./img/SQLiteStudio_Mac02_DMG.png"
+sqls_m3 = "./img/SQLiteStudio_Mac03_App.png"
+sqls_m4 = "./img/SQLiteStudio_Mac04_HomeScreen.png"
+sqls_m5 = "./img/SQLiteStudio_Mac05-Warning.png"
+sqls_m6 = "./img/SQLiteStudio_Mac06-Open.png"
+
+# SQLiteStudio Windows
+sqls_w1 = "./img/SQLiteStudio_Win01_DownloadPage.png"
+sqls_w2 = "./img/SQLiteStudio_Win02_ZipFolder.png"
+sqls_w3 = "./img/SQLiteStudio_Win03_Extract.png"
+sqls_w4 = "./img/SQLiteStudio_Win04_ExtractFolder.png"
+sqls_w5 = "./img/SQLiteStudio_Win05_EXE.png"
+sqls_w6 = "./img/SQLiteStudio_Win06_HomeScreen.png"
 ```
 
 ## DBeaver (SQL Database Viewer)
@@ -140,3 +156,65 @@ If SpatiaLite launches when you try to run it, you're all set!
 ### Installation troubleshooting
 
 If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+
+## SQLiteStudio
+
+### Introduction
+
+[SQLiteStudio](https://sqlitestudio.pl/) is a free, open source, multi-platform desktop application for browsing and editing SQLite database files.
+
+### SQLiteStudio on Mac
+
+Navigate to the [download page](https://sqlitestudio.pl/){rel="noopener noreferrer" target="_blank"} on SQLiteStudio's website and click Download.
+
+![](`r sqls_m1` "SQLiteStudio Download Page")
+
+Once the download finishes, click the .dmg file.
+
+![](`r sqls_m2` "SQLiteStudio DMG")
+
+Drag and drop the SQLiteStudio app to your Applications folder or other location of choice.
+
+![](`r sqls_m3` "SQLiteStudio App")
+
+Double-click the SQLiteStudio app and it will open to its home screen.
+
+![](`r sqls_m4` "SQLiteStudio Home Screen")
+
+#### Troubleshooting
+
+If you receive the warning message, "SQLiteStudio cannot be opened because the developer cannot be verified."   
+Click Cancel.
+
+![](`r sqls_m5` "SQLiteStudio Warning")
+
+Right click the SQLiteStudio app and click Open. Mac will prompt, "Are you sure you want to open it?"  
+Click Open and SQLiteStudio will open to its home screen.
+
+![](`r sqls_m6` "SQLiteStudio Open App")
+
+
+### SQLiteStudio on Windows 10
+
+Navigate to the [download page](https://sqlitestudio.pl/){rel="noopener noreferrer" target="_blank"} on SQLiteStudio's website and click Download.
+
+![](`r sqls_w1` "SQLiteStudio Download Page")
+
+Once the download finishes, click the .zip folder.
+
+![](`r sqls_w2` "SQLiteStudio Zip Folder")
+
+Click Extract all in File Explorer and select your Desktop to extract the files to or other location of choice.
+
+![](`r sqls_w3` "SQLiteStudio Extract")
+![](`r sqls_w4` "SQLiteStudio Extract Folder")
+
+The files will be extracted into a folder named SQLiteStudio.
+Click into the SQLiteStudio folder and find SQLiteStudio.exe.  
+Double-click SQLiteStudio.exe and it will open to its Home Screen.
+
+![](`r sqls_w5` "SQLiteStudio EXE")
+![](`r sqls_w6` "SQLiteStudio Home Screen")
+
+

@@ -7,7 +7,7 @@ github-repo: ucdavisdatalab/install_guides
 url: "https://ucdavisdatalab.github.io/install_guides/"
 
 site: "bookdown::bookdown_site"
-#knit: "bookdown::render_book"
+knit: "bookdown::render_book"
 output:
   bookdown::gitbook:
     css: custom_css.css
@@ -39,3 +39,4 @@ This toolkit has been made possible thanks to contributions by:
 * Carl Stahmer
 * [Jared Joseph](https://jnjoseph.com/){rel="noopener noreferrer" target="_blank"}
 * Cameron Riddell
+* [Nicholas Alonzo](https://github.com/nicholas-alonzo/){rel="noopener noreferrer" target="_blank"}
