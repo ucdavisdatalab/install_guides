@@ -266,7 +266,7 @@ I saved the aforementioned dataset as "variants.csv" in my local filesystem. I w
         data = pd.read_csv("variants.csv")
         data.head(20)
 
-![](`r sdv_1`)
+![](`r sdv_1` "A sample of data from the variants dataset")
 
 Next, create an instance of the model that you plan to use (CopulaGAN, in this example). After you create an instance of the model, you can fit the data to the model.
 
@@ -281,7 +281,7 @@ Let's view some of the new data:
 
         new_data.head()
 
-![](`r sdv_2`)
+![](`r sdv_2` "New variants of COVID-19 that we generated")
 
 Interesting! We were able to generate some "new" COVID-19 variants.
 
@@ -303,9 +303,9 @@ Let's run the evaluation framework with the metrics we selected. This is done by
 
 > Tip: The evaluation framework can take quite a long time to run especially if you have a large amount of data! You can reduce the runtime of the evaluation framework by selecting only the evaluation metrics that you want to use. Otherwise, get a coffee and relax while it runs! 
 
-"Here are our results from running the evaluation framework:"
+Here are our results from running the evaluation framework:
 
-![](`r sdv_3` )
+![](`r sdv_3` "Scores from running the evaluation framework")
 
 Hey, these are some pretty good scores! 
 
