@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Python and Python Tools | UC Davis DataLab Install Guides</title>
   <meta name="description" content="3 Python and Python Tools | UC Davis DataLab Install Guides" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Python and Python Tools | UC Davis DataLab Install Guides" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://ucdavisdatalab.github.io/install_guides/" />
   
   
   <meta name="github-repo" content="ucdavisdatalab/install_guides" />
@@ -24,7 +23,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2022-02-26" />
+<meta name="date" content="2022-05-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="r-and-r-tools.html"/>
 <link rel="next" href="sql-and-database-tools.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -207,6 +206,13 @@
 <li class="chapter" data-level="5.4.3" data-path="other-data-tools.html"><a href="other-data-tools.html#verifying-your-install-11"><i class="fa fa-check"></i><b>5.4.3</b> Verifying your install</a></li>
 <li class="chapter" data-level="5.4.4" data-path="other-data-tools.html"><a href="other-data-tools.html#installation-troubleshooting-13"><i class="fa fa-check"></i><b>5.4.4</b> Installation troubleshooting</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="other-data-tools.html"><a href="other-data-tools.html#synthetic-data-vault"><i class="fa fa-check"></i><b>5.5</b> Synthetic Data Vault</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="other-data-tools.html"><a href="other-data-tools.html#overview-1"><i class="fa fa-check"></i><b>5.5.1</b> Overview</a></li>
+<li class="chapter" data-level="5.5.2" data-path="other-data-tools.html"><a href="other-data-tools.html#about-sdv"><i class="fa fa-check"></i><b>5.5.2</b> About SDV</a></li>
+<li class="chapter" data-level="5.5.3" data-path="other-data-tools.html"><a href="other-data-tools.html#sdv-example-generating-covid-19-variants"><i class="fa fa-check"></i><b>5.5.3</b> SDV Example: Generating COVID-19 Variants</a></li>
+<li class="chapter" data-level="5.5.4" data-path="other-data-tools.html"><a href="other-data-tools.html#sdv-repository-documentation"><i class="fa fa-check"></i><b>5.5.4</b> SDV Repository &amp; Documentation</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -225,16 +231,16 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="python-and-python-tools" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Python and Python Tools</h1>
-<div id="anaconda-python" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Anaconda (Python)</h2>
-<div id="introduction-5" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> Introduction</h3>
+<div id="python-and-python-tools" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Python and Python Tools<a href="python-and-python-tools.html#python-and-python-tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="anaconda-python" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Anaconda (Python)<a href="python-and-python-tools.html#anaconda-python" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction-5" class="section level3 hasAnchor" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Introduction<a href="python-and-python-tools.html#introduction-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.anaconda.com/#" rel="noopener noreferrer" target="_blank">Anaconda</a> is a pre-built environment manager for python. These environments let you keep several separate installations of python on your machine, negating the risk of module versions and incompatibilities ruining your project. The environment are also easily exportable, letting you to easily share them with collaborators.</p>
 </div>
-<div id="anaconda-on-windows" class="section level3" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Anaconda on Windows</h3>
+<div id="anaconda-on-windows" class="section level3 hasAnchor" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Anaconda on Windows<a href="python-and-python-tools.html#anaconda-on-windows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To install <a href="https://www.anaconda.com/#" rel="noopener noreferrer" target="_blank">Anaconda</a> on windows, first navigate to their site, select products, then individual edition.</p>
 <p><img src="img/win_anaconda_1.jpg" title="Anaconda homepage selecting the individual edition for download" /></p>
 <p>Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). Most modern Windows computers can make use of the 64-Bit installer.</p>
@@ -256,8 +262,8 @@
 <p>One the next page it will prompt you to download PyCharm. PyCharm is an interactive environment some use to write their python code. You do not need to install this now. Press Next to continue. On the next page you can choose to view tutorials if you would like, but your install is completed!</p>
 <p><img src="img/win_anaconda_10.jpg" title="Anaconda finish install page" /></p>
 </div>
-<div id="anaconda-on-mac" class="section level3" number="3.1.3">
-<h3><span class="header-section-number">3.1.3</span> Anaconda on Mac</h3>
+<div id="anaconda-on-mac" class="section level3 hasAnchor" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> Anaconda on Mac<a href="python-and-python-tools.html#anaconda-on-mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To install <a href="https://www.anaconda.com/#" rel="noopener noreferrer" target="_blank">Anaconda</a> on mac, first navigate to their site, select products, then individual edition.</p>
 <p><img src="img/win_anaconda_1.jpg" title="Anaconda homepage selecting the individual edition for download" /></p>
 <p>Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). For mac, select the graphical 64-Bit installer.</p>
@@ -265,8 +271,8 @@
 <p>Once the download has finished, run the executable. You will need to select OK to agree to the license, and to allow Anaconda-Nagivator access to control Terminal.</p>
 <p><img src="img/mac_anaconda_1.png" title="Mac asking for anaconda permissions" /></p>
 </div>
-<div id="verifying-your-install-3" class="section level3" number="3.1.4">
-<h3><span class="header-section-number">3.1.4</span> Verifying your install</h3>
+<div id="verifying-your-install-3" class="section level3 hasAnchor" number="3.1.4">
+<h3><span class="header-section-number">3.1.4</span> Verifying your install<a href="python-and-python-tools.html#verifying-your-install-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To verify Anaconda is working on your system, launch the Anaconda Navigator from your programs menu. This should start the main navigator window seen below.</p>
 <p><img src="img/win_anaconda_11.jpg" title="Anaconda navigator home page" /></p>
 <p>From here, click on the Environments tab in the left sidebar. On the next screen, mouse over an environment and press the play button, and select <code>Open with Python</code>. If this is your first time using python, you may only see one environment called <code>base (root)</code> in the environments pane.</p>
@@ -274,19 +280,19 @@
 <p>If a python window successfully launches, you should be good to go!</p>
 <p><img src="img/win_anaconda_13.jpg" title="python terminal from anaconda" /></p>
 </div>
-<div id="installation-troubleshooting-4" class="section level3" number="3.1.5">
-<h3><span class="header-section-number">3.1.5</span> Installation troubleshooting</h3>
+<div id="installation-troubleshooting-4" class="section level3 hasAnchor" number="3.1.5">
+<h3><span class="header-section-number">3.1.5</span> Installation troubleshooting<a href="python-and-python-tools.html#installation-troubleshooting-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are not able to successfully install Anaconda on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
 </div>
 </div>
-<div id="jupyterlab" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> JupyterLab</h2>
-<div id="introduction-6" class="section level3" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Introduction</h3>
+<div id="jupyterlab" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> JupyterLab<a href="python-and-python-tools.html#jupyterlab" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction-6" class="section level3 hasAnchor" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Introduction<a href="python-and-python-tools.html#introduction-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Jupyter Notebooks are a common interactive development environment for python, and they can also run R code. If you are familiar with R Studio notebooks, they operate in a similar fashion. Jupyter notebooks run by hosting a web server on your computer, then letting you connect to it through an internet browser.</p>
 </div>
-<div id="jupyter-from-the-terminal" class="section level3" number="3.2.2">
-<h3><span class="header-section-number">3.2.2</span> Jupyter from the terminal</h3>
+<div id="jupyter-from-the-terminal" class="section level3 hasAnchor" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Jupyter from the terminal<a href="python-and-python-tools.html#jupyter-from-the-terminal" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Regardless of your operating system, the easiest way to install jupyter notebooks is from the terminal. If you are using Anaconda (see the guide in this reader), you can start a terminal by opening the Anaconda Navigator, going to the environments tab, and launching a terminal window using the “Open Terminal” option in your chosen environment.</p>
 <p><img src="img/win_anaconda_12.jpg" title="Anaconda environments page" /></p>
 <p>If you are not using Anaconda, start a terminal window and activate an environment of your choice, typically using <code>conda</code> or <code>venv</code>. Once activated, enter <code>conda install -c conda-forge jupyterlab</code> if on conda, or <code>pip install jupyterlab</code> otherwise. It will ask for confirmation that you want to install the listed components. Input <code>Y</code> and press enter to continue.</p>
@@ -294,24 +300,24 @@
 <p>The terminal will then start downloading and installing all the components, this can take some time. once it has finished you can start jupyter by entering <code>jupyter-lab</code>. Your terminal will start hosting a jupyter lab instance, and should open a tab in your preferred browser. You will not be able to use this terminal for other purposes while jupyter is running, but you can always start another. If a tab does not auto start, you can use the provided links in the terminal to open one.</p>
 <p><img src="img/win_jup_2.jpg" title="starting jupyter lab highlighting the web link" /></p>
 </div>
-<div id="verifying-your-install-4" class="section level3" number="3.2.3">
-<h3><span class="header-section-number">3.2.3</span> Verifying your install</h3>
+<div id="verifying-your-install-4" class="section level3 hasAnchor" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Verifying your install<a href="python-and-python-tools.html#verifying-your-install-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you can open jupyter lab in a tab, you should be all set!</p>
 <p><img src="img/win_jup_3.jpg" title="jupyter lab running in a browser" /></p>
 </div>
-<div id="installation-troubleshooting-5" class="section level3" number="3.2.4">
-<h3><span class="header-section-number">3.2.4</span> Installation troubleshooting</h3>
+<div id="installation-troubleshooting-5" class="section level3 hasAnchor" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Installation troubleshooting<a href="python-and-python-tools.html#installation-troubleshooting-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are not able to successfully install Jupyter Notebooks on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
 </div>
 </div>
-<div id="python-modules" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Python Modules</h2>
-<div id="introduction-7" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Introduction</h3>
+<div id="python-modules" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Python Modules<a href="python-and-python-tools.html#python-modules" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction-7" class="section level3 hasAnchor" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Introduction<a href="python-and-python-tools.html#introduction-7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Python modules are extensions to the basic capabilities of Python. You can install modules from the terminal where you call Python. The same process will apply regardless of your operating system.</p>
 </div>
-<div id="installing-modules-using-conda" class="section level3" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Installing Modules using Conda</h3>
+<div id="installing-modules-using-conda" class="section level3 hasAnchor" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Installing Modules using Conda<a href="python-and-python-tools.html#installing-modules-using-conda" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are using Anaconda, it is recommended you install modules from conda sources to ensure compatibility. First, start a terminal using the Python environment you want to install the module in.</p>
 <p><strong>(Optional)</strong> If you are using Anaconda, use the Anaconda Navigator to launch a terminal of your chosen environment.</p>
 <p><img src="img/pm_conda_1.jpg" title="Opening a terminal from anaconda" /></p>
@@ -319,15 +325,15 @@
 <p><img src="img/pm_conda_2.jpg" title="installing numpy for python in the terminal using conda" /></p>
 <p><code>conda</code> will then search its repositories for a module matching the name you provided. Note that if you are looking for a module python said was missing in an error code, it may not be the same name you need to use when installing! You will need to search online if the install fails because it says there is no module of that name.</p>
 </div>
-<div id="installing-modules-using-pip" class="section level3" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> Installing Modules using Pip</h3>
+<div id="installing-modules-using-pip" class="section level3 hasAnchor" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Installing Modules using Pip<a href="python-and-python-tools.html#installing-modules-using-pip" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are not using conda, or conda could not find a module, you will need to use <code>pip</code> to install modules. First, start a terminal using the Python environment you want to install the module in.</p>
 <p>Once you are in the terminal of your chosen environment, you can install any module you know the name of using <code>pip install &lt;module name&gt;</code>.</p>
 <p><img src="img/pm_pip_1.jpg" title="installing numpy for python in the terminal using pip" /></p>
 <p><code>pip</code> will then search its repositories for a module matching the name you provided. Note that if you are looking for a module python said was missing in an error code, it may not be the same name you need to use when installing! You will need to search online if the install fails because it says there is no module of that name.</p>
 </div>
-<div id="verifying-your-install-5" class="section level3" number="3.3.4">
-<h3><span class="header-section-number">3.3.4</span> Verifying your install</h3>
+<div id="verifying-your-install-5" class="section level3 hasAnchor" number="3.3.4">
+<h3><span class="header-section-number">3.3.4</span> Verifying your install<a href="python-and-python-tools.html#verifying-your-install-5" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Regardless of your installation method, you can test if a module was successfully installed by doing the following. First, activate Python by entering <code>python</code> in the terminal which is in the environment you installed the module into. You know you are in <code>python</code> if you see the welcome message and your input changes into <code>&gt;&gt;&gt;</code>.</p>
 <p><img src="img/pm_python_1.jpg" title="starting python in the terminal" /></p>
 <p>Once you have activated python, you can test if your module was installed by trying to import it. To import a module enter <code>import &lt;module name&gt;</code> in python.</p>
@@ -335,8 +341,8 @@
 <p>If you did not get an error, your module is successfully installed! You can also give modules an alias when importing for easier use.</p>
 <p><img src="img/pm_python_3.jpg" title="assigning numpy the alias np" /></p>
 </div>
-<div id="installation-troubleshooting-6" class="section level3" number="3.3.5">
-<h3><span class="header-section-number">3.3.5</span> Installation troubleshooting</h3>
+<div id="installation-troubleshooting-6" class="section level3 hasAnchor" number="3.3.5">
+<h3><span class="header-section-number">3.3.5</span> Installation troubleshooting<a href="python-and-python-tools.html#installation-troubleshooting-6" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are not able to successfully install OpenRefine on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
 
 </div>
