@@ -23,7 +23,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2022-05-19" />
+<meta name="date" content="2022-05-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -406,7 +406,7 @@ warnings.filterwarnings(‘ignore’)</p>
 <p>I saved the aforementioned dataset as “variants.csv” in my local filesystem. I will use Pandas to read the data into the dataframe named <code>data</code> and then see what that dataframe looks like.</p>
 <pre><code>    data = pd.read_csv(&quot;variants.csv&quot;)
     data.head(20)</code></pre>
-<p><img src="img/variant_sample.png" /></p>
+<p><img src="img/variant_sample.png" title="A sample of data from the variants dataset" /></p>
 <p>Next, create an instance of the model that you plan to use (CopulaGAN, in this example). After you create an instance of the model, you can fit the data to the model.</p>
 <pre><code>    model = CopulaGAN()
     model.fit(data)</code></pre>
@@ -414,7 +414,7 @@ warnings.filterwarnings(‘ignore’)</p>
 <pre><code>    new_data = model.sample(200)</code></pre>
 <p>Let’s view some of the new data:</p>
 <pre><code>    new_data.head()</code></pre>
-<p><img src="img/new_variant_head.png" /></p>
+<p><img src="img/new_variant_head.png" title="New variants of COVID-19 that we generated" /></p>
 <p>Interesting! We were able to generate some “new” COVID-19 variants.</p>
 <div id="evaluating-our-results" class="section level5 hasAnchor" number="5.5.3.4.1">
 <h5><span class="header-section-number">5.5.3.4.1</span> Evaluating our results<a href="other-data-tools.html#evaluating-our-results" class="anchor-section" aria-label="Anchor link to header"></a></h5>
@@ -430,8 +430,8 @@ warnings.filterwarnings(‘ignore’)</p>
 <blockquote>
 <p>Tip: The evaluation framework can take quite a long time to run especially if you have a large amount of data! You can reduce the runtime of the evaluation framework by selecting only the evaluation metrics that you want to use. Otherwise, get a coffee and relax while it runs!</p>
 </blockquote>
-<p>“Here are our results from running the evaluation framework:”</p>
-<p><img src="img/evaluate_results.png" /></p>
+<p>Here are our results from running the evaluation framework:</p>
+<p><img src="img/evaluate_results.png" title="Scores from running the evaluation framework" /></p>
 <p>Hey, these are some pretty good scores!</p>
 </div>
 </div>
