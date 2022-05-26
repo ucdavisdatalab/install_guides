@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 R and R Tools | UC Davis DataLab Install Guides</title>
   <meta name="description" content="2 R and R Tools | UC Davis DataLab Install Guides" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 R and R Tools | UC Davis DataLab Install Guides" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://ucdavisdatalab.github.io/install_guides/" />
   
   
   <meta name="github-repo" content="ucdavisdatalab/install_guides" />
@@ -24,7 +23,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2022-02-26" />
+<meta name="date" content="2022-05-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="command-line-tools.html"/>
 <link rel="next" href="python-and-python-tools.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,8 +49,9 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -207,6 +206,13 @@
 <li class="chapter" data-level="5.4.3" data-path="other-data-tools.html"><a href="other-data-tools.html#verifying-your-install-11"><i class="fa fa-check"></i><b>5.4.3</b> Verifying your install</a></li>
 <li class="chapter" data-level="5.4.4" data-path="other-data-tools.html"><a href="other-data-tools.html#installation-troubleshooting-13"><i class="fa fa-check"></i><b>5.4.4</b> Installation troubleshooting</a></li>
 </ul></li>
+<li class="chapter" data-level="5.5" data-path="other-data-tools.html"><a href="other-data-tools.html#synthetic-data-vault"><i class="fa fa-check"></i><b>5.5</b> Synthetic Data Vault</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="other-data-tools.html"><a href="other-data-tools.html#overview-1"><i class="fa fa-check"></i><b>5.5.1</b> Overview</a></li>
+<li class="chapter" data-level="5.5.2" data-path="other-data-tools.html"><a href="other-data-tools.html#about-sdv"><i class="fa fa-check"></i><b>5.5.2</b> About SDV</a></li>
+<li class="chapter" data-level="5.5.3" data-path="other-data-tools.html"><a href="other-data-tools.html#sdv-example-generating-covid-19-variants"><i class="fa fa-check"></i><b>5.5.3</b> SDV Example: Generating COVID-19 Variants</a></li>
+<li class="chapter" data-level="5.5.4" data-path="other-data-tools.html"><a href="other-data-tools.html#sdv-repository-documentation"><i class="fa fa-check"></i><b>5.5.4</b> SDV Repository &amp; Documentation</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -225,12 +231,12 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="r-and-r-tools" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> R and R Tools</h1>
-<div id="rrstudio" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> R/RStudio</h2>
-<div id="introduction-2" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Introduction</h3>
+<div id="r-and-r-tools" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> R and R Tools<a href="r-and-r-tools.html#r-and-r-tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="rrstudio" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> R/RStudio<a href="r-and-r-tools.html#rrstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction-2" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Introduction<a href="r-and-r-tools.html#introduction-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.r-project.org/about.html" rel="noopener noreferrer" target="_blank">“R”</a> is both a free and open source programming language designed for statistical computing and graphics, and the software for interpreting the code written in the R language. <a href="https://rstudio.com/products/rstudio/" rel="noopener noreferrer" target="_blank">RStudio</a> is an integrative development environment (IDE) within which you can write and execute code, and interact with the R software. It’s an interface for working with the R software that allows you to see your code, plots, variables, etc. all on one screen. This functionality can help you work with R, connect it with other tools, and manage your workspace and projects. You cannot run RStudio without having R installed. While RStudio is a commercial product, the free version is sufficient for most researchers.</p>
 <p><strong>Why learn R?</strong> There are many advantages to working with R.</p>
 <ul>
@@ -241,8 +247,8 @@
 <li><strong>Interdisciplinary and extensible.</strong> Because anyone can write and share R packages, it provides a framework for integrating approaches across domains, encouraging innovation.</li>
 </ul>
 </div>
-<div id="rrstudio-on-windows" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> R/RStudio on Windows</h3>
+<div id="rrstudio-on-windows" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> R/RStudio on Windows<a href="r-and-r-tools.html#rrstudio-on-windows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Follow these step-by-step instructions to install R and RStudio on a Windows machine:</p>
 <p>First open your internet browser of choice, and navigate to <a href="https://www.r-project.org/" rel="noopener noreferrer" target="_blank">https://www.r-project.org/</a>. Click on <strong>download R</strong>.</p>
 <p><img src="img/win_r_install_1_browser.jpg" title="R project homepage" /></p>
@@ -279,38 +285,38 @@
 <p>Run the installer just as you did for the R download.</p>
 <p><img src="img/win_r_install_17_rstudio_installer.jpg" title="web browser showing finished R studio download" /></p>
 </div>
-<div id="updating-rrstudio-on-windows" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> Updating R/RStudio on Windows</h3>
+<div id="updating-rrstudio-on-windows" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Updating R/RStudio on Windows<a href="r-and-r-tools.html#updating-rrstudio-on-windows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Over time updates to R and R Studio will necessitate and update. <strong>Packages you use may not update with R</strong>! If you rely heavily on a package for a project, it is highly recommended you save your current configuration of R and R Studio before updating. If there was a major version change, you will also need to re-install all of your packages. Upgrading R and R Studio follows the same process as installing it in the first place. You can simply install the new versions on your machine. As long as you do not remove the old instances of R as part of this process, you would be able to revert to a previous version.</p>
 </div>
-<div id="rrstudio-on-mac" class="section level3" number="2.1.4">
-<h3><span class="header-section-number">2.1.4</span> R/RStudio on Mac</h3>
+<div id="rrstudio-on-mac" class="section level3 hasAnchor" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> R/RStudio on Mac<a href="r-and-r-tools.html#rrstudio-on-mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are installing R/RStudio on a Mac, there is no extra configuration. Simply go the download pages for <a href="https://www.r-project.org/" rel="noopener noreferrer" target="_blank">R</a> and <a href="https://rstudio.com/" rel="noopener noreferrer" target="_blank">RStudio</a> and choose the latest version for mac. Run the installer package when it is finished downloading. If you receive an error regarding the app being from an unidentified developer, please <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac" rel="noopener noreferrer" target="_blank">follow the instructions here</a>.</p>
 </div>
-<div id="verifying-your-install-1" class="section level3" number="2.1.5">
-<h3><span class="header-section-number">2.1.5</span> Verifying your install</h3>
+<div id="verifying-your-install-1" class="section level3 hasAnchor" number="2.1.5">
+<h3><span class="header-section-number">2.1.5</span> Verifying your install<a href="r-and-r-tools.html#verifying-your-install-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Once you have installed <strong>both</strong> R and RStudio, you should be able to run RStudio on your machine. You can verify your install is working by opening RStudio and typing <code>paste("Hello World!")</code> into the console as shown below. If the code runs you should see a response that says <code>[1] Hello World!</code>. If that works you are all set!</p>
 <p><img src="img/win_r_verify_1.jpg" title="R studio environment" /></p>
 </div>
-<div id="installation-troubleshooting-2" class="section level3" number="2.1.6">
-<h3><span class="header-section-number">2.1.6</span> Installation troubleshooting</h3>
+<div id="installation-troubleshooting-2" class="section level3 hasAnchor" number="2.1.6">
+<h3><span class="header-section-number">2.1.6</span> Installation troubleshooting<a href="r-and-r-tools.html#installation-troubleshooting-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are not able to successfully install R/RStudio on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
 </div>
 </div>
-<div id="r-packages" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> R Packages</h2>
-<div id="introduction-3" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Introduction</h3>
+<div id="r-packages" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> R Packages<a href="r-and-r-tools.html#r-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction-3" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Introduction<a href="r-and-r-tools.html#introduction-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>R packages are community made functions that automate or expand the things you can do in the R language. The process for installing them is largely the same for both Windows and Mac. There are three main methods for installing R packages. You can install them from the Comprehensive R Archive Network (CRAN) from within R, from another online source like <a href="https://github.com/" rel="noopener noreferrer" target="_blank">Github</a>, or from files on your local machine. We will cover each of these methods here.</p>
 </div>
-<div id="packages-from-cran" class="section level3" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Packages from CRAN</h3>
+<div id="packages-from-cran" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Packages from CRAN<a href="r-and-r-tools.html#packages-from-cran" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The vast majority to packages in R can be installed from CRAN. You will need the name of the package you want to install. Once you have the name (case sensitive!), you can download it from within R using the <code>install.packages()</code> function in the R console.</p>
 <p>For example, if you wanted to install the <code>skimr</code> package, you would enter <code>install.packages("skimr")</code>. Note that you do need to put the package name in quotes, and that it is case sensitive. You can install multiple packages at a time by passing a vector of package names to <code>install.packages()</code>, for example: <code>install.packages(c("skimr", "corrplot"))</code>.</p>
 <p>You can test if the packages installed correctly by calling it in R using the <code>library()</code> function.</p>
 </div>
-<div id="pacakges-from-github" class="section level3" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Pacakges from Github</h3>
+<div id="pacakges-from-github" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Pacakges from Github<a href="r-and-r-tools.html#pacakges-from-github" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Not all packages are available on CRAN, especially very new or very old packages. For these you will most likely need to install them from an online repository, the most common of which is <a href="https://github.com/" rel="noopener noreferrer" target="_blank">Github</a>. There are some R packages that make this process easy. We will use the <code>remotes</code> package.</p>
 <p>First install the <code>remotes</code> package by running <code>install.packages("remotes")</code> in the R console. If it installed correctly, you will see <code>package ‘remotes’ successfully unpacked and MD5 sums checked</code>.</p>
 <p><img src="img/win_r_pkg_1.jpg" title="R studio console" /></p>
@@ -325,8 +331,8 @@
 <p>You can now use the helpful <code>wordcountaddin</code>! You can find it in the <strong>Addins</strong> dropdown above the editor pane.</p>
 <p><img src="img/win_r_pkg_6.jpg" title="dropdown addin menu in R studio showing thr wordcount addin" /></p>
 </div>
-<div id="packages-from-local-source" class="section level3" number="2.2.4">
-<h3><span class="header-section-number">2.2.4</span> Packages from Local Source</h3>
+<div id="packages-from-local-source" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> Packages from Local Source<a href="r-and-r-tools.html#packages-from-local-source" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>On occasion it will be necessary to install an R package from a local <strong>source</strong> <code>.tar.gz</code> file. You would need to download this file yourself, then install it. For example, let’s download then install the <code>mgcv</code> package from <a href="https://cran.r-project.org/web/packages/mgcv/index.html" rel="noopener noreferrer" target="_blank">https://cran.r-project.org/web/packages/mgcv/index.html</a>. First navigate to that page, and click on the download link next to <strong>package source</strong>.</p>
 <p><img src="img/win_r_pkg_7.jpg" title="CRAR page for the MGCV R pacakge with the download link highlighted" /></p>
 <p>Once the <code>.tar.gz</code> file is downloaded, leave it as it is, do not decompress it. Instead, find the file on your system and take note of it’s location. On Windows you can shift-right click on it, then select <strong>Copy as path</strong>.</p>
@@ -340,14 +346,14 @@
 <p><img src="img/win_r_pkg_9.jpg" title="R console installing the local package" /></p>
 </div>
 </div>
-<div id="r-tools" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> R Tools</h2>
-<div id="introduction-4" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Introduction</h3>
+<div id="r-tools" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> R Tools<a href="r-and-r-tools.html#r-tools" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="introduction-4" class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Introduction<a href="r-and-r-tools.html#introduction-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>R Tools is a bundle of programs on Windows that allows R to build packages from local source files, rather than installing through CRAN. The vast majority of the time this is unnecessary, but some circumstances require it. Mac users do not need to install R Tools.</p>
 </div>
-<div id="rtools-on-windows" class="section level3" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> RTools on Windows</h3>
+<div id="rtools-on-windows" class="section level3 hasAnchor" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> RTools on Windows<a href="r-and-r-tools.html#rtools-on-windows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>First, navigate to the R tools website at <a href="https://cran.r-project.org/bin/windows/Rtools/" rel="noopener noreferrer" target="_blank">https://cran.r-project.org/bin/windows/Rtools/</a>.</p>
 <p><img src="img/win_rt_install_1.jpg" title="R tools download page" /></p>
 <p>Scroll down to the download links and select the <strong>rtoolsXX-x86_64.exe</strong> link.</p>
@@ -365,13 +371,13 @@
 <p>In order for R to make use of R tools, you need to add it to the <code>PATH</code> that R looks for tools on. To do this, open R or R Studio and type <code>writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")</code> in the console and press enter.</p>
 <p><img src="img/win_rt_install_8.jpg" title="R console checking R tools in installed" /></p>
 </div>
-<div id="verifying-your-install-2" class="section level3" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> Verifying your install</h3>
+<div id="verifying-your-install-2" class="section level3 hasAnchor" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Verifying your install<a href="r-and-r-tools.html#verifying-your-install-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>To verify R tools was installed successfully, first restart R to assure you are in a clean environment. You can do this by closing and re-opening your R or RStudio window. Afterwards, type <code>Sys.which("make")</code> (case sensitive!) into the console. If you see <code>"C:\\rtools40\\usr\\bin\\make.exe"</code> as a result you are all good!</p>
 <p><img src="img/win_rt_install_10.jpg" title="R console confirming R tools is on path" /></p>
 </div>
-<div id="installation-troubleshooting-3" class="section level3" number="2.3.4">
-<h3><span class="header-section-number">2.3.4</span> Installation troubleshooting</h3>
+<div id="installation-troubleshooting-3" class="section level3 hasAnchor" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Installation troubleshooting<a href="r-and-r-tools.html#installation-troubleshooting-3" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>If you are not able to successfully install R Tools on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
 
 </div>

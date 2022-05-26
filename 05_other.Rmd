@@ -34,6 +34,11 @@ tes_4 = "./img/win_tes_4.jpg"
 tes_5 = "./img/win_tes_5.jpg"
 tes_6 = "./img/win_tes_6.jpg"
 tes_7 = "./img/win_tes_7.jpg"
+
+# SDV
+sdv_1 <- "./img/variant_sample.png"
+sdv_2 <- "./img/new_variant_head.png"
+sdv_3 <- "./img/evaluate_results.png"
 ```
 
 ## 7zip
@@ -201,3 +206,115 @@ In the resulting window, copy the following command and press enter: `& "C:\Prog
 ### Installation troubleshooting
 
 If you are not able to successfully install OpenRefine on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+
+
+## Synthetic Data Vault
+
+This section will provide you with basic guidance for using the Synthetic Data Vault (SDV) Python library for generating synthetic data to augment your already-existing datasets. 
+
+### Overview
+
+Synthetic data (or "simulated data", "imputed data") is data that has been generated from an existing dataset. It bears the same statistical properties of the original dataset but does not give insight into identifying the original data. Synthetic data can be used for building models, conducting research, and more. Both statistical simulation and computational derivation can be used to generate synthetic data. 
+
+### About SDV
+
+SDV is an open source project that uses uses probabilistic graphical modeling and deep learning to create synthetic data based off of the given dataset. 
+
+Unique hierarchical generative modeling and recursive sampling allows for different structures of data to be used and generated. 
+
+SDV is a great tool to use to generate synthetic data when you don't have enough data or if you need some data to test your models with. 
+
+#### How does SDV work? 
+
+SDV contains several models and methods for your use in generating synthetic data. 
+
+#### Which model should I choose? 
+
+If you are generating tabular data with many continuous or quantifiable features, it is reccomended that you use the GaussianCopula or the TVAE models. The CTGAN model has also performed well for tabular data when the original data is mostly categorical or nominal. 
+
+If you are generating synthetic images, it is reccomended that you use the CTGAN or CopulaGAN models.
+
+SDV is not limited to just generating tabular data or image data either. Information on how to generate timeseries data can be found in the SDV documentation.
+
+
+### SDV Example: Generating COVID-19 Variants
+
+#### Environment Set-up
+
+Before installing SDV, it is reccomended that you have available other data science libraries that will faciliate your use of the tool. In this example, an Anaconda environment to host my Jupyter Notebook is used. To find out how you can also set-up your general data science environment, please see the [DataLab Install Guide Toolkit](https://datalab.ucdavis.edu/install-guide/){rel="noopener noreferrer" target="_blank"}.
+
+#### SDV Set-up
+
+SDV can be installed via PyPi just like any other Python library served in a similar manner. 
+
+#### Data
+For this toolkit, we will be generating additional COVID-19 variants based off of the thousands that already exist as of 2022. We will be using [this dataset](https://drive.google.com/file/d/1DyF9PdMbFQgiValuHtxSls34gdaY5067/view?usp=sharing){rel="noopener noreferrer" target="_blank"} located in Google Drive. 
+
+#### Code 
+
+> Tip: I like to import `warnings` when using SDV in Jupyter notebook so that I can ignore any warnings that pop-up. Remember that SDV is an open source project and it is actively being updated by community members.
+        import warnings
+        warnings.filterwarnings('ignore')
+
+First, import the libraries Pandas and the CopulaGAN model from SDV.
+
+        import pandas as pd
+        from sdv.tabular import CopulaGAN
+
+I saved the aforementioned dataset as "variants.csv" in my local filesystem. I will use Pandas to read the data into the dataframe named  `data` and then see what that dataframe looks like.
+
+        data = pd.read_csv("variants.csv")
+        data.head(20)
+
+![](`r sdv_1` "A sample of data from the variants dataset")
+
+Next, create an instance of the model that you plan to use (CopulaGAN, in this example). After you create an instance of the model, you can fit the data to the model.
+
+        model = CopulaGAN()
+        model.fit(data)
+
+Now that you have a fitted model, you can specify how much synthetic data you want to generate from the model fitted to your original data.
+
+        new_data = model.sample(200)
+
+Let's view some of the new data:
+
+        new_data.head()
+
+![](`r sdv_2` "New variants of COVID-19 that we generated")
+
+Interesting! We were able to generate some "new" COVID-19 variants.
+
+##### Evaluating our results
+
+We can evaluate how similar our synthetic data is to the original data by using the evualtion framework that comes with SDV:
+
+        from sdv.evaluation import evaluate
+
+We will use statistical measures of efficacy including the Kolmogorov-Smirnov (`KSTest`) test to compare the distributions of continuous columns and  the Chi-Squared (`CSTest`) test to compare the distributions of discrete columns. We can also use a detection metric such as `LogisticDetection` which evaluates how hard it is to distinguish the synthetic data from the real data by using a machine learning model.
+
+        metrics = ['KSTest', 'CSTest', 'LogisticDetection']
+
+> Tip: You can find other evaluation metrics in SDV's documentation [here.](https://sdv.dev/SDV/user_guides/evaluation/single_table_metrics.html){rel="noopener noreferrer" target="_blank"}
+
+Let's run the evaluation framework with the metrics we selected. This is done by using the `evaluate()` function we just imported with the newly generated data (`new_data`) and the original data (`data`). We also include the metrics that were defined above.
+
+        evaluate(new_data, data, aggregate=False, metrics=metrics) 
+
+> Tip: The evaluation framework can take quite a long time to run especially if you have a large amount of data! You can reduce the runtime of the evaluation framework by selecting only the evaluation metrics that you want to use. Otherwise, get a coffee and relax while it runs! 
+
+Here are our results from running the evaluation framework:
+
+![](`r sdv_3` "Scores from running the evaluation framework")
+
+Hey, these are some pretty good scores! 
+
+### SDV  Repository & Documentation
+
+More tutorials and details regarding the SDV library can be found by following the links below. 
+
+The repository for SDV is found [here.](https://github.com/sdv-dev/SDV){rel="noopener noreferrer" target="_blank"}
+
+Further documentation for the SDV library can be found [here.](https://sdv.dev/SDV/){rel="noopener noreferrer" target="_blank"}
+
+SDV has an active Slack community with people who can answer any questions you have about how SDV works or how to implement it in your research. The link to join the Slack community can be found in the documentation above. 
