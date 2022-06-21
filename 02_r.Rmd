@@ -162,7 +162,7 @@ For example, if you wanted to install the `skimr` package, you would enter `inst
 
 You can test if the packages installed correctly by calling it in R using the `library()` function. 
 
-### Pacakges from Github
+### Packages from Github
 
 Not all packages are available on CRAN, especially very new or very old packages. For these you will most likely need to install them from an online repository, the most common of which is [Github](https://github.com/){rel="noopener noreferrer" target="_blank"}. There are some R packages that make this process easy. We will use the `remotes` package.
 
