@@ -47,9 +47,15 @@ win_wsl_powershell = "./img/win_wsl_powershell.png"
 
 ### Introduction
 
-Git is a ubiquitous software for *version control*. Version control describes a process of storing and organizing multiple versions (or copies) of documents that you create. Approaches to version control range from simple to complex and can involve the use of various human workflows and/or software applications to accomplish the overall goal of storing and managing multiple versions of the same document(s).  
+Git is a ubiquitous software for *version control*. Version control describes a 
+process of storing and organizing multiple versions (or copies) of documents that 
+you create. Approaches to version control range from simple to complex and can 
+involve the use of various human workflows and/or software applications to 
+accomplish the overall goal of storing and managing multiple versions of the 
+same document(s).  
 
-Most people have a folder/directory somewhere on their computer that looks something like this:
+Most people have a folder/directory somewhere on their computer that looks 
+something like this:
 
 ![](`r git_url` "File explorer showing several copies of a word document with version tags")
 
@@ -57,31 +63,49 @@ Or perhaps, this:
 
 ![](`r git_url2` "File explorer showing several copies of a word document with dates")
 
-This is a rudimentary form of version control that relies completely on the human workflow of saving multiple versions of a file. This system works minimally well, in that it does provide you with a history of file versions theoretically organized by their time sequence. But this filesystem method provides no information about how the file has changed from version to version, why you might have saved a particular version, or specifically how the various versions are related. This human-managed filesystem approach is more subject to error than software-assisted version control systems. It is not uncommon for users to make mistakes when naming file versions, or to go back and edit files out of sequence. Software-assisted version control systems such as Git were designed to solve this problem.
+This is a rudimentary form of version control that relies completely on the 
+human workflow of saving multiple versions of a file. This system works minimally 
+well, in that it does provide you with a history of file versions theoretically 
+organized by their time sequence. But this filesystem method provides no information 
+about how the file has changed from version to version, why you might have saved 
+a particular version, or specifically how the various versions are related. This 
+human-managed filesystem approach is more subject to error than software-assisted 
+version control systems. It is not uncommon for users to make mistakes when naming 
+file versions, or to go back and edit files out of sequence. Software-assisted 
+version control systems such as Git were designed to solve this problem.
 
-If you would like more information on how Git works, read more in the [Git Book](https://git-scm.com/book/en/v2){rel="noopener noreferrer" target="_blank"} for free.
+If you would like more information on how Git works, read more in the 
+[Git Book](https://git-scm.com/book/en/v2){rel="noopener noreferrer" target="_blank"} 
+for free.
 
 ### Git on Windows
 
-Follow these step-by-step instructions if you're installing Git on a Windows machine:
+Follow these step-by-step instructions if you're installing Git on a Windows 
+machine:
 
 First, launch a web browser, the image below shows the Microsoft Edge browser:
 
 ![](`r git_url19` "New web browser window") 
 
-Next, navigate to the following Git download URL in your browser [https://git-scm/com/downloads](https://git-scm.com/downloads){rel="noopener noreferrer" target="_blank"}:
+Next, navigate to the following Git download URL in your browser 
+[https://git-scm/com/downloads](https://git-scm.com/downloads){rel="noopener noreferrer" target="_blank"}:
 
 ![](`r git_url20` "git website") 
 
-Select "Windows" from the Downloads portion of the Git webpage. Git will display the following page and automatically being downloading the correct version of the Git software.  If the download doesn't start automatically, click on the "Click here to download manually link":
+Select "Windows" from the Downloads portion of the Git webpage. Git will display 
+the following page and automatically being downloading the correct version of the 
+Git software. If the download doesn't start automatically, click on the "Click here 
+to download manually link":
 
 ![](`r git_url21` "git download page") 
 
-When the download is complete, open/Run the downloaded file (will look different in different browsers, but everyone should know how to do this):
+When the download is complete, open/Run the downloaded file (will look different 
+in different browsers, but everyone should know how to do this):
 
 ![](`r git_url22` "Completed download box") 
 
-A screen will appear asking for permissions for the Git application to make changes to your device.  Click on the **Yes** button:
+A screen will appear asking for permissions for the Git application to make changes 
+to your device. Click on the **Yes** button:
 
 ![](`r git_url23` "Windows request to allow program to alter files") 
 
@@ -89,7 +113,8 @@ Click **Next** to accept the user license:
 
 ![](`r git_url24` "git license agreement") 
 
-Leave the default "Destination Location" unchanged (usually C:\\Program Files\\Git) and hit **Next**
+Leave the default "Destination Location" unchanged (usually C:\\Program Files\\Git) 
+and hit **Next**
 
 ![](`r git_url25` "git location selection")
 
@@ -97,7 +122,9 @@ You will see a screen like the one below asking you to "Select Components":
 
 ![](`r git_url26` "git component selection")
 
-Leave all of the default components selected and also check the boxes next to "Additional Icons" and it's sub-item, "On the Desktop". Your completed configurations window should have the following components selected:
+Leave all of the default components selected and also check the boxes next to 
+"Additional Icons" and it's sub-item, "On the Desktop". Your completed 
+configurations window should have the following components selected:
 
 ```
 Additional Icons 
@@ -114,97 +141,141 @@ And should look like this:
 
 ![](`r git_url27` "git component selection with custom options")
 
-After verifying that you have the necessary components selected as per above, hit **Next**.
+After verifying that you have the necessary components selected as per above, 
+hit **Next**.
 
-The next screen will ask you to "Select a Start Menu Folder." Keep the default value of Git and hit **Next**:
+The next screen will ask you to "Select a Start Menu Folder." Keep the default 
+value of Git and hit **Next**:
 
 ![](`r git_url28` "git start menu shortcut")
 
-Leave the default "Use Vim (the ubiquitous text editor) as Git's default editor" selected on the "Choosing the default editor used by Git" screen and hit **Next**:
+Leave the default "Use Vim (the ubiquitous text editor) as Git's default editor" 
+selected on the "Choosing the default editor used by Git" screen and hit **Next**:
 
 ![](`r git_url29` "git editor selection")
 
-On the next screen, leave the default "let Git decide" option selected and hit **Next**:
+On the next screen, leave the default "let Git decide" option selected and hit 
+**Next**:
 
 ![](`r git_url30` "git initial branch name selection")
 
-Leave the default "Git from the command line and also from 3rd-party software" selected and hit **Next**:
+Leave the default "Git from the command line and also from 3rd-party software" 
+selected and hit **Next**:
 
 ![](`r git_url31` "git PATH options")
 
-On the next "Choosing HTTPS transport backend" page leave the default "Use the OpenSSL library" option selected and hit **Next**:
+On the next "Choosing HTTPS transport backend" page leave the default "Use the 
+OpenSSL library" option selected and hit **Next**:
 
 ![](`r git_url32` "git HTTPS options")
 
-Leave the default "Checkout Windows-style, commit Unix-style line endings" selected on the next page and hit **Next**:
+Leave the default "Checkout Windows-style, commit Unix-style line endings" 
+selected on the next page and hit **Next**:
 
 ![](`r git_url33` "git line end options")
 
-Keep the default "Use MinTTY (the default terminal of MSYS2)" selected on the "Configuring the terminal emulator to use with Git Bash" window and hit **Next**:
+Keep the default "Use MinTTY (the default terminal of MSYS2)" selected on the 
+"Configuring the terminal emulator to use with Git Bash" window and hit **Next**:
 
 ![](`r git_url34` "git bash options")
 
-Keep the default value of "Default (fast-forward or merge)" on the "Choose the default behavior of 'git pull'" page and hit **Next**:
+Keep the default value of "Default (fast-forward or merge)" on the "Choose the 
+default behavior of 'git pull'" page and hit **Next**:
 
 ![](`r git_url35` "git pull options")
 
-Keep the default value of "Git Credential Manager Core" on the "Choose a credential helper" page and hit **Next**:
+Keep the default value of "Git Credential Manager Core" on the "Choose a credential 
+helper" page and hit **Next**:
 
 ![](`r git_url36` "git credential options")
 
-Keep the default values on the "Configuration extra options" page by keeping "Enable file system caching" checked and "Enable symbolic links" unchecked and then hit **Next**:
+Keep the default values on the "Configuration extra options" page by keeping 
+"Enable file system caching" checked and "Enable symbolic links" unchecked and 
+then hit **Next**:
 
 ![](`r git_url37` "git extra options")
 
-Make sure that no options are checked in the "Configuring experimental options" page and hit **Install**:
+Make sure that no options are checked in the "Configuring experimental options" 
+page and hit **Install**:
 
 ![](`r git_url38` "git experimental options")
 
-After you hit this **Install** button as per above, you will see an install progress screen like the one below:
+After you hit this **Install** button as per above, you will see an install 
+progress screen like the one below:
 
 ![](`r git_url39` "git installing")
 
-When the install is complete, a new, "Completing the Git Setup Wizard" window like the one below will appear:
+When the install is complete, a new, "Completing the Git Setup Wizard" window 
+like the one below will appear:
 
 ![](`r git_url40` "git completion window")
 
-Make sure that all of the options on this window are unchecked as in the image below and then hit the **Finish** button:
+Make sure that all of the options on this window are unchecked as in the image 
+below and then hit the **Finish** button:
 
 ![](`r git_url41` "git completion window with unchecked View Release Notes")
 
 This will complete your installation process.
 
-*Windows users should verify that when downloading Git for Windows they have also installed Git Bash, which is necessary for working with Git in command line.*
+*Windows users should verify that when downloading Git for Windows they have also *
+*installed Git Bash, which is necessary for working with Git in command line.*
 
 ### Git on Mac
 
-If you are installing Git on a Mac, there is no extra configuration. Simply go the git download page at [https://git-scm.com/downloads](https://git-scm.com/downloads){rel="noopener noreferrer" target="_blank"} and choose the latest version for mac, and run the installer package when it is finished downloading. If you get an “unknown developer” warning during the install process, follow the instructions at the beginning of the video at [https://www.youtube.com/watch?v=__kr-Ew5kbE](https://www.youtube.com/watch?v=__kr-Ew5kbE){rel="noopener noreferrer" target="_blank"} to help you work through this problem.
+If you are installing Git on a Mac, there is no extra configuration. Simply go the 
+Git download page at 
+[https://git-scm.com/downloads](https://git-scm.com/downloads){rel="noopener noreferrer" target="_blank"} 
+and choose the latest version for Mac, and run the installer package when it is 
+finished downloading. If you get an “unknown developer” warning during the install 
+process, follow the instructions at the beginning of the video at 
+[https://www.youtube.com/watch?v=__kr-Ew5kbE](https://www.youtube.com/watch?v=__kr-Ew5kbE){rel="noopener noreferrer" target="_blank"} 
+to help you work through this problem.
 
 ### Verifying your install
 
-**Whether you're installing on Windows or Mac, note that unlike most applications that you've installed before, you will not find a "Git" application in your programs or applications directory once the installation is complete.** As long as you don't get an explicit error message during the installation process, you can assume that the software was successfully installed. Git is a command-line application with which you interact using the command-line, which we'll cover during the interactive session. If you're already familiar with using command line, you can verify your install by opening the terminal (for Windows that will be Git Bash in your programs menu) and type *git --version*. You should then see a response of your installed version (e.g., git version 2.12.2.windows.2, or git version 2.12.2.mac.2), and not the error "command not found."
+**Whether you're installing on Windows or Mac, note that unlike most applications **
+**that you've installed before, you will not find a "Git" application in your **
+**programs or applications directory once the installation is complete.** As 
+long as you don't get an explicit error message during the installation process, 
+you can assume that the software was successfully installed. Git is a command-line 
+application with which you interact using the command-line. If you're already 
+familiar with using command line, you can verify your install by opening the 
+terminal (for Windows that will be Git Bash in your programs menu) and type 
+`git --version`. You should then see a response of your installed version 
+(e.g., git version 2.12.2.windows.2, or git version 2.12.2.mac.2), and not the 
+error "command not found."
 
 ### Installation troubleshooting
 
-If you are not able to successfully install Git on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install Git on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.
 
 ## Windows Subsystem for Linux (Ubuntu)
 
 ### Introduction
 
-Windows now has the ability to install a linux operating system on your machine without the use of an emulator. This gives you a full-featured linux environment that can interact with your normal files.
+Windows now has the ability to install a Linux operating system on your machine 
+without the use of an emulator. This gives you a full-featured linux environment 
+that can interact with your normal files.
 
 ### Check your windows version
 
-First, please check the build version of Windows that you are using. This can be done by selecting the `Windows logo key + r` on your keyboard. Once you do that, you should see the windows Run prompt:
+First, please check the build version of Windows that you are using. This can be 
+done by selecting the `Windows logo key + r` on your keyboard. Once you do that, 
+you should see the windows Run prompt:
 
 ![](`r win_version_run` "Windows check version from run prompt")
 
-Type the command "winver" (no quotes) into the prompt, as depicted in the image above, and hit enter. You should see a screen similar to this:
+Type the command "winver" (no quotes) into the prompt, as depicted in the image 
+above, and hit enter. You should see a screen similar to this:
 
 ![](`r win_version_popup` "Windows build version")
 
-Your build version number is the one that follows the "Windows Build" text (as highlighted in the above image). Depending on whether your build number is larger or smaller than 19041, please follow 
+Your build version number is the one that follows the "Windows Build" text (as 
+highlighted in the above image). Depending on whether your build number is larger 
+or smaller than 19041, please follow 
 the appropriate directions below:
 
 * [Larger than (or equal to) 19041][Windows version larger than (or equal to) 19041]
@@ -212,33 +283,42 @@ the appropriate directions below:
 
 #### Windows version larger than (or equal to) 19041
 
-In the start menu, search for "Powershell", right click and select "run as administrator".
+In the start menu, search for "Powershell", right click and select "run as 
+administrator".
 
 ![](`r win_search_powershell` "Windows search menu for PowerShell")
 
-A small blue window should open with a flashing cursor. Please type `wsl --install` and hit enter:
+A small blue window should open with a flashing cursor. Please type `wsl --install` 
+and hit enter:
 
 ![](`r win_wsl_powershell` "PowerShell command for installing WSL")
 
-This will take a few minutes to install everything. Once it is finished, please skip to [verifying your install](#commandline-verify).
+This will take a few minutes to install everything. Once it is finished, please 
+skip to [verifying your install](#commandline-verify).
 
-If the above installation did not work- please try to install [using these instructions][Windows version larger smaller than 19041] (even if your version is not smaller than 19041).
+If the above installation did not work- please try to install 
+[using these instructions][Windows version larger smaller than 19041] (even if 
+your version is not smaller than 19041).
 
 #### Windows version larger smaller than 19041
 
-In the start menu, search for "Turn Windows features on or off" and open that settings window. 
+In the start menu, search for "Turn Windows features on or off" and open that 
+settings window. 
 
 ![](`r wsl_1` "Windows search menu selecting Turn windows features on or off")
 
-In the settings window, scroll down to "Windows Subsystem for Linux", check the box next to it, and select `OK` at the bottom of the window.
+In the settings window, scroll down to "Windows Subsystem for Linux", check the 
+box next to it, and select `OK` at the bottom of the window.
 
 ![](`r wsl_2` "Windows features window turning on Windows Subsystem for Linux")
 
-You will not need to restart your computer. Once you have rebooted, open the Windows Store from the start menu.
+You will not need to restart your computer. Once you have rebooted, open the 
+Windows Store from the start menu.
 
 ![](`r wsl_3` "Windows search menu opening the Microsoft store")
 
-In the Windows Store, search for `Ubuntu`, and select the version-less one unless you have a reason to pick a specific version.
+In the Windows Store, search for `Ubuntu`, and select the version-less one 
+unless you have a reason to pick a specific version.
 
 ![](`r wsl_4` "Home page of Microsoft store searching for Ubuntu")
 
@@ -256,4 +336,7 @@ If a terminal window opens, you should be good to go!
 
 ### Installation troubleshooting
 
-If you are not able to successfully install the Linux Subsystem for Windows on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install the Linux Subsystem for Windows on 
+your own, please attend DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.

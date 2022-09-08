@@ -35,15 +35,22 @@ pm_python_3 = "./img/pm_python_3.jpg"
 
 ### Introduction
 
-[Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} is a pre-built environment manager for python. These environments let you keep several separate installations of python on your machine, negating the risk of module versions and incompatibilities ruining your project. The environment are also easily exportable, letting you to easily share them with collaborators.
+[Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} 
+is a pre-built environment manager for python. These environments let you keep 
+several separate installations of Python on your machine, negating the risk of 
+module versions and incompatibilities ruining your project. The environment are 
+also easily exportable, letting you to easily share them with collaborators.
 
 ### Anaconda on Windows
 
-To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on windows, first navigate to their site, select products, then individual edition.
+To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} 
+on Windows, first navigate to their site, select products, then individual edition.
 
 ![](`r anaconda_1` "Anaconda homepage selecting the individual edition for download")
 
-Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). Most modern Windows computers can make use of the 64-Bit installer.
+Scroll down on this page and near the bottom you will be able to select your 
+preferred download (or click the download button). Most modern Windows computers 
+can make use of the 64-Bit installer.
 
 ![](`r anaconda_2` "Anaconda download operating system selection")
 
@@ -51,7 +58,8 @@ Once the download has finished, run the executable.
 
 ![](`r anaconda_3` "web browser showing finished anaconda download")
 
-The setup will walk you through the process of installing Anaconda on your computer. First hit the `Next` button.
+The setup will walk you through the process of installing Anaconda on your 
+computer. First hit the `Next` button.
 
 ![](`r anaconda_4` "Anaconda install start page")
 
@@ -59,7 +67,8 @@ On the following screen hit `I Agree`.
 
 ![](`r anaconda_5` "Anaconda license agreement")
 
-Next choose whether you want to install Anaconda for everyone, or just yourself. This doesn't matter if you are the only one that uses your computer.
+Next choose whether you want to install Anaconda for everyone, or just yourself. 
+This doesn't matter if you are the only one that uses your computer.
 
 ![](`r anaconda_6` "installation type selection")
 
@@ -67,7 +76,8 @@ Select where you would like to install Anaconda. In most cases the default is fi
 
 ![](`r anaconda_7` "install location selection")
 
-On the Advanced Option page, it is recommended you leave both these options unchecked unless you have a reason not to. Hit Install!
+On the Advanced Option page, it is recommended you leave both these options 
+unchecked unless you have a reason not to. Hit Install!
 
 ![](`r anaconda_8` "advanced options window")
 
@@ -75,41 +85,56 @@ Anaconda will then start installing on your system. When it is finished, press N
 
 ![](`r anaconda_9` "anaconda install progress bar")
 
-One the next page it will prompt you to download PyCharm. PyCharm is an interactive environment some use to write their python code. You do not need to install this now. Press Next to continue. On the next page you can choose to view tutorials if you would like, but your install is completed!
+One the next page it will prompt you to download PyCharm. PyCharm is an 
+interactive environment some use to write their Python code. You do not need to 
+install this now. Press Next to continue. On the next page you can choose to 
+view tutorials if you would like, but your install is completed!
 
 ![](`r anaconda_10` "Anaconda finish install page")
 
 ### Anaconda on Mac
 
-To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on mac, first navigate to their site, select products, then individual edition.
+To install 
+[Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} 
+on Mac, first navigate to their site, select products, then individual edition.
 
 ![](`r anaconda_1` "Anaconda homepage selecting the individual edition for download")
 
-Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). For mac, select the graphical 64-Bit installer.
+Scroll down on this page and near the bottom you will be able to select your 
+preferred download (or click the download button). For Mac, select the graphical 
+64-Bit installer.
 
 ![](`r anaconda_2` "Anaconda download operating system selection")
 
-Once the download has finished, run the executable. You will need to select OK to agree to the license, and to allow Anaconda-Nagivator access to control Terminal. 
+Once the download has finished, run the executable. You will need to select OK to 
+agree to the license, and to allow Anaconda-Nagivator access to control Terminal. 
 
 ![](`r mac_anaconda_1` "Mac asking for anaconda permissions")
 
 ### Verifying your install
 
-To verify Anaconda is working on your system, launch the Anaconda Navigator from your programs menu. This should start the main navigator window seen below.
+To verify Anaconda is working on your system, launch the Anaconda Navigator from 
+your programs menu. This should start the main navigator window seen below.
 
 ![](`r anaconda_11` "Anaconda navigator home page")
 
-From here, click on the Environments tab in the left sidebar. On the next screen, mouse over an environment and press the play button, and select `Open with Python`. If this is your first time using python, you may only see one environment called `base (root)` in the environments pane.
+From here, click on the Environments tab in the left sidebar. On the next screen, 
+mouse over an environment and press the play button, and select `Open with Python`. 
+If this is your first time using Python, you may only see one environment called 
+`base (root)` in the environments pane.
 
 ![](`r anaconda_12` "Anaconda environments page")
 
-If a python window successfully launches, you should be good to go!
+If a Python window successfully launches, you should be good to go!
 
 ![](`r anaconda_13` "python terminal from anaconda")
 
 ### Installation troubleshooting
 
-If you are not able to successfully install Anaconda on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install Anaconda on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.
 
 ## JupyterLab
 
@@ -145,46 +170,73 @@ If you are not able to successfully install Jupyter Notebooks on your own, pleas
 
 ### Introduction
 
-Python modules are extensions to the basic capabilities of Python. You can install modules from the terminal where you call Python. The same process will apply regardless of your operating system.
+Python modules are extensions to the basic capabilities of Python. You can install 
+modules from the terminal where you call Python. The same process will apply 
+regardless of your operating system.
 
 ### Installing Modules using Conda
 
-If you are using Anaconda, it is recommended you install modules from conda sources to ensure compatibility. First, start a terminal using the Python environment you want to install the module in.
+If you are using Anaconda, it is recommended you install modules from `conda` 
+sources to ensure compatibility. First, start a terminal using the Python 
+environment you want to install the module in.
 
-**(Optional)** If you are using Anaconda, use the Anaconda Navigator to launch a terminal of your chosen environment.
+**(Optional)** If you are using Anaconda, use the Anaconda Navigator to launch 
+a terminal of your chosen environment.
 
 ![](`r pm_conda_1` "Opening a terminal from anaconda")
 
-Once you are in the terminal of your chosen environment, you can install any module you know the name of using `conda install <module name>`.
+Once you are in the terminal of your chosen environment, you can install any 
+module you know the name of using `conda install <module name>`. In the example 
+below, we install `NumPy`, a popular library for data science analysis.
 
-![](`r pm_conda_2` "installing numpy for python in the terminal using conda")
+![](`r pm_conda_2` "installing numpy for Python in the terminal using conda")
 
-`conda` will then search its repositories for a module matching the name you provided. Note that if you are looking for a module python said was missing in an error code, it may not be the same name you need to use when installing! You will need to search online if the install fails because it says there is no module of that name.
+`conda` will then search its repositories for a module matching the name you 
+provided. Note that if you are looking for a module Python said was missing in 
+an error code, it may not be the same name you need to use when installing! You 
+will need to search online if the install fails because it says there is no 
+module of that name.
 
 ### Installing Modules using Pip
 
-If you are not using conda, or conda could not find a module, you will need to use `pip` to install modules. First, start a terminal using the Python environment you want to install the module in.
+If you are not using `conda`, or `conda` could not find a module, you will need 
+to use `pip` to install modules. First, start a terminal using the Python 
+environment you want to install the module in.
 
-Once you are in the terminal of your chosen environment, you can install any module you know the name of using `pip install <module name>`.
+Once you are in the terminal of your chosen environment, you can install any 
+module you know the name of using `pip install <module name>`. Again, we use 
+`NumPy` as an example.
 
-![](`r pm_pip_1` "installing numpy for python in the terminal using pip")
+![](`r pm_pip_1` "installing numpy for Python in the terminal using pip")
 
-`pip` will then search its repositories for a module matching the name you provided. Note that if you are looking for a module python said was missing in an error code, it may not be the same name you need to use when installing! You will need to search online if the install fails because it says there is no module of that name.
+`pip` will then search its repositories for a module matching the name you 
+provided. Note that if you are looking for a module Python said was missing in 
+an error code, it may not be the same name you need to use when installing! You 
+will need to search online if the install fails because it says there is no module 
+of that name.
 
 ### Verifying your install
 
-Regardless of your installation method, you can test if a module was successfully installed by doing the following. First, activate Python by entering `python` in the terminal which is in the environment you installed the module into. You know you are in `python` if you see the welcome message and your input changes into `>>>`.
+Regardless of your installation method, you can test if a module was successfully 
+installed by doing the following. First, activate Python by entering `python` in the 
+terminal which is in the environment you installed the module into. You know you 
+are in `python` if you see the welcome message and your input changes into `>>>`.
 
-![](`r pm_python_1` "starting python in the terminal")
+![](`r pm_python_1` "starting Python in the terminal")
 
-Once you have activated python, you can test if your module was installed by trying to import it. To import a module enter `import <module name>` in python.
+Once you have activated python, you can test if your module was installed by 
+trying to import it. To import a module enter `import <module name>` in Python.
 
-![](`r pm_python_2` "importing numpy into the python environment")
+![](`r pm_python_2` "importing numpy into the Python environment")
 
-If you did not get an error, your module is successfully installed! You can also give modules an alias when importing for easier use.
+If you did not get an error, your module is successfully installed! You can also 
+give modules an alias when importing for easier use.
 
 ![](`r pm_python_3` "assigning numpy the alias np")
 
 ### Installation troubleshooting
 
-If you are not able to successfully install OpenRefine on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install OpenRefine on your own, please 
+attend DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.

@@ -45,11 +45,18 @@ sqls_w6 = "./img/SQLiteStudio_Win06_HomeScreen.png"
 
 ### Introduction
 
-[DBeaver](https://dbeaver.io/){rel="noopener noreferrer" target="_blank"} is a free and open source tool to inspect and manipulate databases of nearly any type. It has versions for Windows, Mac, and Linux. This can offer a more intuitive method for people new to databases to interact with their data, and create code to query data for other uses. Note that DBeaver does not *create* a database, it only allows you to view and interact with one.
+[DBeaver](https://dbeaver.io/){rel="noopener noreferrer" target="_blank"} is a 
+free and open source tool to inspect and manipulate databases of nearly any type. 
+It has versions for Windows, Mac, and Linux. This can offer a more intuitive 
+method for people new to databases to interact with their data, and create code 
+to query data for other uses. Note that DBeaver does not *create* a database, 
+it only allows you to view and interact with one.
 
 ### DBeaver on Windows
 
-First navigate to the [download page](https://dbeaver.io/download/){rel="noopener noreferrer" target="_blank"} on DBeaver's website. Scroll down and click on the installer link to download it.
+First navigate to the 
+[download page](https://dbeaver.io/download/){rel="noopener noreferrer" target="_blank"} 
+on DBeaver's website. Scroll down and click on the installer link to download it.
 
 ![](`r db_1` "DBeaver download page")
 
@@ -57,19 +64,27 @@ After the install finishes, click on the executable to launch the installer.
 
 ![](`r db_2` "web drowser showing DBeaver downloading")
 
-Once you select your language, the installer will prompt you to close all other applications, and hit next. On the following page, accept the license agreement by clicking `I Agree`.
+Once you select your language, the installer will prompt you to close all other 
+applications, and hit next. On the following page, accept the license agreement 
+by clicking `I Agree`.
 
 ![](`r db_3` "Dbeaver license agreement")
 
-On the next page, select if you would like to install DBeaver for all users on your machine, or just you. In most cases it is fine to install for everyone.
+On the next page, select if you would like to install DBeaver for all users on 
+your machine, or just you. In most cases it is fine to install for everyone.
 
 ![](`r db_4` "Dbeaver user selection")
 
-Depending on your selection, the installer may need to re-start with administrator privileges. Enter your previous options again until you reach the "Choose Components" page. Once here, you can leave the default settings and click `Next`.
+Depending on your selection, the installer may need to re-start with administrator 
+privileges. Enter your previous options again until you reach the "Choose 
+Components" page. Once here, you can leave the default settings and click `Next`.
 
 ![](`r db_5` "Dbeaver component selection")
 
-The next page will ask where you would like to install DBeaver. The default location should work for most people, click `Next` to continue. The same is the true of the next page regarding the start menu location, you can click `Install` to start the installation process.
+The next page will ask where you would like to install DBeaver. The default 
+location should work for most people, click `Next` to continue. The same is the 
+true of the next page regarding the start menu location, you can click `Install` 
+to start the installation process.
 
 ![](`r db_6` "Dbeaver location selection")
 
@@ -81,21 +96,30 @@ Once the installation is complete, you can click `Finish` to exit the installer.
 
 ### Installation troubleshooting
 
-If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install DBeaver on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.
 
 ## DB Browser
 
 ### Introduction
 
-[DB Browser](https://sqlitebrowser.org/){rel="noopener noreferrer" target="_blank"} is an ultra lightweight viewer for SQLite databases. It is made to allow those familiar with spreadsheets to work more easily with the common SQLite format. However, that is all that it does; you cannot use it on other database types.
+[DB Browser](https://sqlitebrowser.org/){rel="noopener noreferrer" target="_blank"} 
+is an ultra lightweight viewer for SQLite databases. It is made to allow those 
+familiar with spreadsheets to work more easily with the common SQLite format. 
+However, that is all that it does; you cannot use it on other database types.
 
 ### DB Browser on Windows
 
-First head to the [DB Browser download page](https://sqlitebrowser.org/dl/), and select the version that matches your system. On Windows this is most likely the 64-bit standard installer.
+First head to the [DB Browser download page](https://sqlitebrowser.org/dl/), and 
+select the version that matches your system. On Windows this is most likely the 
+64-bit standard installer.
 
 ![](`r dbb_1` "DB browser download page")
 
-Once the download has finished, start the installer from the browser or your download location.
+Once the download has finished, start the installer from the browser or your 
+download location.
 
 ![](`r dbb_2` "DB browser download finished in web browser")
 
@@ -103,11 +127,17 @@ Once you have started the installer, press the `Next` button to continue.
 
 ![](`r dbb_3` "DB browser install wizard")
 
-On the next screen, accept the license agreement and press `Next`. The following page will ask you if you would like to place shortcuts anywhere. Desktop will place icons on your desktop, while Program Menu will add options to your right click menu. You can choose to have these if you wish, I will not. Press `Next` once you have decided.
+On the next screen, accept the license agreement and press `Next`. The following 
+page will ask you if you would like to place shortcuts anywhere. Desktop will 
+place icons on your desktop, while Program Menu will add options to your right 
+click menu. You can choose to have these if you wish, I will not. Press `Next` 
+once you have decided.
 
 ![](`r dbb_4` "DB browser shortcut options")
 
-On the following screen, you will be asked to select what components you want to install and where. You can safely keep the defaults and continue. Press `Install` on the following page.
+On the following screen, you will be asked to select what components you want to 
+install and where. You can safely keep the defaults and continue. Press `Install` 
+on the following page.
 
 ![](`r dbb_5` "DB browser components options")
 
@@ -115,35 +145,50 @@ One the installation is complete, you can press `Finish` to close the installer!
 
 ### Verifying your install
 
-To test everything is working launch DB Browser from the windows menu or from the install location (`C:\Program Files\DB Browser for SQLite` by default).
+To test everything is working launch DB Browser from the windows menu or from the 
+install location (`C:\Program Files\DB Browser for SQLite` by default).
 
 ### Installation troubleshooting
 
-If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install DBeaver on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.
 
 ## SpatiaLite GUI
 
 ### Introduction
 
-[SpatiaLite GUI](https://www.gaia-gis.it/gaia-sins/){rel="noopener noreferrer" target="_blank"} is a free, open-source tool for storing and working with spatial data in a SQLite database.
+[SpatiaLite GUI](https://www.gaia-gis.it/gaia-sins/){rel="noopener noreferrer" target="_blank"} 
+is a free, open-source tool for storing and working with spatial data in a SQLite database.
 
 ### SpatiaLite GUI on Windows
 
-First navigate to the [SpatiaLite download page](){rel="noopener noreferrer" target="_blank"}, and look for "MS Windows binaries." Look for the version title "previous stable version" and click the link that matches your machine (most likely 64bit)[^2].
+First navigate to the 
+[SpatiaLite download page](){rel="noopener noreferrer" target="_blank"}, and look 
+for "MS Windows binaries." Look for the version title "previous stable version" 
+and click the link that matches your machine (most likely 64bit)[^2].
 
-[^2]: As of writing, the GUI is not available on the most recent release. You may want to check there as well, and download that if possible.
+[^2]: As of writing, the GUI is not available on the most recent release. You may 
+want to check there as well, and download that if possible.
 
 ![](`r sgui_1` "spatialgui homepage")
 
-On the following page, click the link to download `spatialite_gui-NG-X.X.X-win-amd64.7z`. Once it has finished downloading, open the 7-zip archive from yuor browser or your download location. You will need 7-zip installed to open this archive. If you do not already have it installed, please see our guide on installing 7-zip in out "other Software" guide.
+On the following page, click the link to download `spatialite_gui-NG-X.X.X-win-amd64.7z`. 
+Once it has finished downloading, open the 7-zip archive from yuor browser or 
+your download location. You will need 7-zip installed to open this archive. If 
+you do not already have it installed, please see our guide on installing 7-zip 
+in out "other Software" guide.
 
 ![](`r sgui_2` "spatialgui download page")
 
-Once the archive is open, simply drag the containing folder to your desktop or other location of choice.
+Once the archive is open, simply drag the containing folder to your desktop or 
+other location of choice.
 
 ![](`r sgui_3` "zip archive with arrow dragging files onto desktop")
 
-You can now run SpatiaLite by opening the folder, and running the `spatialite_gui` executable, no instillation needed.
+You can now run SpatiaLite by opening the folder, and running the `spatialite_gui` 
+executable, no instillation needed.
 
 ![](`r sgui_4` "file browser starting the spatialgui program")
 
@@ -155,18 +200,23 @@ If SpatiaLite launches when you try to run it, you're all set!
 
 ### Installation troubleshooting
 
-If you are not able to successfully install DBeaver on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
-
+If you are not able to successfully install DBeaver on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.
 
 ## SQLiteStudio
 
 ### Introduction
 
-[SQLiteStudio](https://sqlitestudio.pl/) is a free, open source, multi-platform desktop application for browsing and editing SQLite database files.
+[SQLiteStudio](https://sqlitestudio.pl/) is a free, open source, multi-platform 
+desktop application for browsing and editing SQLite database files.
 
 ### SQLiteStudio on Mac
 
-Navigate to the [download page](https://sqlitestudio.pl/){rel="noopener noreferrer" target="_blank"} on SQLiteStudio's website and click Download.
+Navigate to the 
+[download page](https://sqlitestudio.pl/){rel="noopener noreferrer" target="_blank"} 
+on SQLiteStudio's website and click Download.
 
 ![](`r sqls_m1` "SQLiteStudio Download Page")
 
@@ -174,7 +224,8 @@ Once the download finishes, click the .dmg file.
 
 ![](`r sqls_m2` "SQLiteStudio DMG")
 
-Drag and drop the SQLiteStudio app to your Applications folder or other location of choice.
+Drag and drop the SQLiteStudio app to your Applications folder or other location 
+of choice.
 
 ![](`r sqls_m3` "SQLiteStudio App")
 
@@ -184,12 +235,14 @@ Double-click the SQLiteStudio app and it will open to its home screen.
 
 #### Troubleshooting
 
-If you receive the warning message, "SQLiteStudio cannot be opened because the developer cannot be verified."   
+If you receive the warning message, "SQLiteStudio cannot be opened because the 
+developer cannot be verified."   
 Click Cancel.
 
 ![](`r sqls_m5` "SQLiteStudio Warning")
 
-Right click the SQLiteStudio app and click Open. Mac will prompt, "Are you sure you want to open it?"  
+Right click the SQLiteStudio app and click Open. Mac will prompt, "Are you sure 
+you want to open it?"
 Click Open and SQLiteStudio will open to its home screen.
 
 ![](`r sqls_m6` "SQLiteStudio Open App")
@@ -197,7 +250,9 @@ Click Open and SQLiteStudio will open to its home screen.
 
 ### SQLiteStudio on Windows 10
 
-Navigate to the [download page](https://sqlitestudio.pl/){rel="noopener noreferrer" target="_blank"} on SQLiteStudio's website and click Download.
+Navigate to the 
+[download page](https://sqlitestudio.pl/){rel="noopener noreferrer" target="_blank"} 
+on SQLiteStudio's website and click Download.
 
 ![](`r sqls_w1` "SQLiteStudio Download Page")
 
@@ -205,7 +260,8 @@ Once the download finishes, click the .zip folder.
 
 ![](`r sqls_w2` "SQLiteStudio Zip Folder")
 
-Click Extract all in File Explorer and select your Desktop to extract the files to or other location of choice.
+Click Extract all in File Explorer and select your Desktop to extract the files 
+to or other location of choice.
 
 ![](`r sqls_w3` "SQLiteStudio Extract")
 ![](`r sqls_w4` "SQLiteStudio Extract Folder")
