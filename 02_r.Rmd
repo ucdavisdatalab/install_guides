@@ -48,25 +48,50 @@ rt_img10 = "./img/win_rt_install_10.jpg"
 
 ### Introduction
 
-["R"](https://www.r-project.org/about.html){rel="noopener noreferrer" target="_blank"} is both a free and open source programming language designed for statistical computing and graphics, and the software for interpreting the code written in the R language. [RStudio](https://rstudio.com/products/rstudio/){rel="noopener noreferrer" target="_blank"} is an integrative development environment (IDE) within which you can write and execute code, and interact with the R software. It's an interface for working with the R software that allows you to see your code, plots, variables, etc. all on one screen. This functionality can help you work with R, connect it with other tools, and manage your workspace and projects. You cannot run RStudio without having R installed. While RStudio is a commercial product, the free version is sufficient for most researchers.
+["R"](https://www.r-project.org/about.html){rel="noopener noreferrer" target="_blank"} 
+is both a free and open source programming language designed for statistical 
+computing and graphics, and the software for interpreting the code written in the 
+R language. [RStudio](https://rstudio.com/products/rstudio/){rel="noopener noreferrer" target="_blank"} 
+is an integrative development environment (IDE) within which you can write and 
+execute code, and interact with the R software. It's an interface for working 
+with the R software that allows you to see your code, plots, variables, etc. all 
+on one screen. This functionality can help you work with R, connect it with other 
+tools, and manage your workspace and projects. You cannot run RStudio without 
+having R installed. While RStudio is a commercial product, the free version is 
+sufficient for most researchers.
 
 **Why learn R?** There are many advantages to working with R. 
 
-* **Scientific integrity.** Working with a scripting language like R facilitates reproducible research. Having the commands for an analysis captured in code promotes transparency and reproducibility. Someone using your code and data should be able to exactly reproduce your analyses. An increasing number of research journals not only encourage, but are beginning to require, submission of code along with a manuscript. 
-* **Many data types and sizes.** R was designed for statistical computing and thus incorporates many data structures and types to facilitate analyses. It can also connect to local and cloud databases.
-* **Graphics.** R has built-in plotting functionalities that allow you to adjust any aspect of your graph to effectively tell the story of your data.
-* **Open and cross-platform.** Because R is free, open-source software that works across many different operating systems, anyone can inspect the source code, and report and fix bugs. It is supported by a large community of users and developers.
-* **Interdisciplinary and extensible.** Because anyone can write and share R packages, it provides a framework for integrating approaches across domains, encouraging innovation.
+* **Scientific integrity.** Working with a scripting language like R facilitates 
+reproducible research. Having the commands for an analysis captured in code 
+promotes transparency and reproducibility. Someone using your code and data 
+should be able to exactly reproduce your analyses. An increasing number of research 
+journals not only encourage, but are beginning to require, submission of code 
+along with a manuscript. 
+* **Many data types and sizes.** R was designed for statistical computing and 
+  thus incorporates many data structures and types to facilitate analyses. It 
+  can also connect to local and cloud databases.
+* **Graphics.** R has built-in plotting functionalities that allow you to adjust 
+  any aspect of your graph to effectively tell the story of your data.
+* **Open and cross-platform.** Because R is free, open-source software that works 
+  across many different operating systems, anyone can inspect the source code, 
+  and report and fix bugs. It is supported by a large community of users and developers.
+* **Interdisciplinary and extensible.** Because anyone can write and share R 
+  packages, it provides a framework for integrating approaches across domains, 
+  encouraging innovation.
 
 ### R/RStudio on Windows
 
 Follow these step-by-step instructions to install R and RStudio on a Windows machine:
 
-First open your internet browser of choice, and navigate to [https://www.r-project.org/](https://www.r-project.org/){rel="noopener noreferrer" target="_blank"}. Click on **download R**.
+First open your internet browser of choice, and navigate to 
+[https://www.r-project.org/](https://www.r-project.org/){rel="noopener noreferrer" target="_blank"}. 
+Click on **download R**.
 
 ![](`r r_img01` "R project homepage")
 
-On the following page, select the link under whatever location is closest to you for the best download speed (though any will work).
+On the following page, select the link under whatever location is closest to you 
+for the best download speed (though any will work).
 
 ![](`r r_img02` "R download mirror page")
 
@@ -82,7 +107,8 @@ Finally, click **Download R X.X.X for Windows** to download the installer.
 
 ![](`r r_img05` "Download link for R")
 
-When the download is complete, run the R installer. This will look slightly different depending on your browser.
+When the download is complete, run the R installer. This will look slightly 
+different depending on your browser.
 
 ![](`r r_img06` "Web browser showing the finished R download")
 
@@ -94,7 +120,8 @@ Leave the default install location and select **Next >**.
 
 ![](`r r_img08` "R install location selection")
 
-If you know what kind of machine you are on, you can specify if you want the 32 or 64 bit version of R. If you do not know, it is safe to install both.
+If you know what kind of machine you are on, you can specify if you want the 32 
+or 64 bit version of R. If you do not know, it is safe to install both.
 
 ![](`r r_img09` "version selection page")
 
@@ -102,7 +129,9 @@ Keep the default startup options and hit **Next >**.
 
 ![](`r r_img10` "startup options page")
 
-You most likely will not want an R shortcut on your desktop, as you will almost certainly use RStudio as an interface. You can still have one if you would like. Otherwise, accept the defaults and hit **Next >**.
+You most likely will not want an R shortcut on your desktop, as you will almost 
+certainly use RStudio as an interface. You can still have one if you would like. 
+Otherwise, accept the defaults and hit **Next >**.
 
 ![](`r r_img11` "shortcut options page")
 
@@ -110,15 +139,20 @@ Wait for the instillation to complete.
 
 ![](`r r_img12` "R install progress bar")
 
-Once it is done, hit **Finish**. You've now installed R! However, we still need to install RStudio separately.
+Once it is done, hit **Finish**. You've now installed R! However, we still need 
+to install RStudio separately.
 
 ![](`r r_img13` "finished R install page")
 
-Navigate to the RStudio homepage at [https://rstudio.com/](https://rstudio.com/){rel="noopener noreferrer" target="_blank"} and click the download button.
+Navigate to the RStudio homepage at 
+[https://rstudio.com/](https://rstudio.com/){rel="noopener noreferrer" target="_blank"} 
+and click the download button.
 
 ![](`r r_img14` "R studio homepage")
 
-Scroll down and select the free version to download. If you are using RStudio for commercial purposes you will need to look into RStudio's licensing terms to see if you need to pay for the pro version.
+Scroll down and select the free version to download. If you are using RStudio 
+for commercial purposes you will need to look into RStudio's licensing terms to 
+see if you need to pay for the pro version.
 
 ![](`r r_img15` "R studio version selection webpage with the desktop option highlighted")
 
@@ -132,81 +166,146 @@ Run the installer just as you did for the R download.
 
 ### Updating R/RStudio on Windows
 
-Over time updates to R and R Studio will necessitate and update. **Packages you use may not update with R**! If you rely heavily on a package for a project, it is highly recommended you save your current configuration of R and R Studio before updating. If there was a major version change, you will also need to re-install all of your packages. Upgrading R and R Studio follows the same process as installing it in the first place. You can simply install the new versions on your machine. As long as you do not remove the old instances of R as part of this process, you would be able to revert to a previous version.
+Over time updates to R and R Studio will necessitate and update. 
+**Packages you use may not update with R**! If you rely heavily on a package for 
+a project, it is highly recommended you save your current configuration of R and 
+R Studio before updating. If there was a major version change, you will also need 
+to re-install all of your packages. Upgrading R and R Studio follows the same 
+process as installing it in the first place. You can simply install the new 
+versions on your machine. As long as you do not remove the old instances of R as 
+part of this process, you would be able to revert to a previous version.
 
 ### R/RStudio on Mac
 
-If you are installing R/RStudio on a Mac, there is no extra configuration. Simply go the download pages for [R](https://www.r-project.org/){rel="noopener noreferrer" target="_blank"} and [RStudio](https://rstudio.com/){rel="noopener noreferrer" target="_blank"} and choose the latest version for mac. Run the installer package when it is finished downloading. If you receive an error regarding the app being from an unidentified developer, please [follow the instructions here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac){rel="noopener noreferrer" target="_blank"}.
+If you are installing R/RStudio on a Mac, there is no extra configuration. Simply 
+go the download pages for 
+[R](https://www.r-project.org/){rel="noopener noreferrer" target="_blank"} and 
+[RStudio](https://rstudio.com/){rel="noopener noreferrer" target="_blank"} and 
+choose the latest version for mac. Run the installer package when it is finished 
+downloading. If you receive an error regarding the app being from an unidentified 
+developer, please 
+[follow the instructions here](https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unidentified-developer-mh40616/mac){rel="noopener noreferrer" target="_blank"}.
 
 ### Verifying your install
 
-Once you have installed **both** R and RStudio, you should be able to run RStudio on your machine. You can verify your install is working by opening RStudio and typing `paste("Hello World!")` into the console as shown below. If the code runs you should see a response that says `[1] Hello World!`. If that works you are all set!
+Once you have installed **both** R and RStudio, you should be able to run RStudio 
+on your machine. You can verify your install is working by opening RStudio and 
+typing `paste("Hello World!")` into the console as shown below. If the code runs 
+you should see a response that says `[1] Hello World!`. If that works you are all set!
 
 ![](`r r_img91` "R studio environment")
 
 ### Installation troubleshooting
 
-If you are not able to successfully install R/RStudio on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install R/RStudio on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.
 
 ## R Packages
 
 ### Introduction
 
-R packages are community made functions that automate or expand the things you can do in the R language. The process for installing them is largely the same for both Windows and Mac. There are three main methods for installing R packages. You can install them from the Comprehensive R Archive Network (CRAN) from within R, from another online source like [Github](https://github.com/){rel="noopener noreferrer" target="_blank"}, or from files on your local machine. We will cover each of these methods here.
+R packages are community made functions that automate or expand the things you 
+can do in the R language. The process for installing them is largely the same for 
+both Windows and Mac. There are three main methods for installing R packages. You 
+can install them from the Comprehensive R Archive Network (CRAN) from within R, 
+from another online source like 
+[Github](https://github.com/){rel="noopener noreferrer" target="_blank"}, or from 
+files on your local machine. We will cover each of these methods here.
 
 ### Packages from CRAN
 
-The vast majority to packages in R can be installed from CRAN. You will need the name of the package you want to install. Once you have the name (case sensitive!), you can download it from within R using the `install.packages()` function in the R console.
+The vast majority to packages in R can be installed from CRAN. You will need the 
+name of the package you want to install. Once you have the name (case sensitive!), 
+you can download it from within R using the `install.packages()` function in the 
+R console.
 
-For example, if you wanted to install the `skimr` package, you would enter `install.packages("skimr")`. Note that you do need to put the package name in quotes, and that it is case sensitive. You can install multiple packages at a time by passing a vector of package names to `install.packages()`, for example: `install.packages(c("skimr", "corrplot"))`.
+For example, if you wanted to install the `skimr` package, you would enter 
+`install.packages("skimr")`. Note that you do need to put the package name in 
+quotes, and that it is case sensitive. You can install multiple packages at a 
+time by passing a vector of package names to `install.packages()`, for example: 
+`install.packages(c("skimr", "corrplot"))`.
 
-You can test if the packages installed correctly by calling it in R using the `library()` function. 
+You can test if the packages installed correctly by calling it in R using the 
+`library()` function. 
 
 ### Packages from Github
 
-Not all packages are available on CRAN, especially very new or very old packages. For these you will most likely need to install them from an online repository, the most common of which is [Github](https://github.com/){rel="noopener noreferrer" target="_blank"}. There are some R packages that make this process easy. We will use the `remotes` package.
+Not all packages are available on CRAN, especially very new or very old packages. 
+For these you will most likely need to install them from an online repository, 
+the most common of which is 
+[Github](https://github.com/){rel="noopener noreferrer" target="_blank"}. There 
+are some R packages that make this process easy. We will use the `remotes` package.
 
-First install the `remotes` package by running `install.packages("remotes")` in the R console. If it installed correctly, you will see `package ‘remotes’ successfully unpacked and MD5 sums checked`.
+First install the `remotes` package by running `install.packages("remotes")` in 
+the R console. If it installed correctly, you will see 
+`package ‘remotes’ successfully unpacked and MD5 sums checked`.
 
 ![](`r rpkg_img01` "R studio console")
 
-Once `remotes` is installed, you can install packages directly from an online repository. We will use `remotes`'s `install_github()` function to demonstrate. Let's try installing the handy [`wordcountaddin`](https://github.com/benmarwick/wordcountaddin){rel="noopener noreferrer" target="_blank"} for RStudio. First navigate to the package page on Github: [https://github.com/benmarwick/wordcountaddin](https://github.com/benmarwick/wordcountaddin){rel="noopener noreferrer" target="_blank"}.
+Once `remotes` is installed, you can install packages directly from an online 
+repository. We will use `remotes`'s `install_github()` function to demonstrate. 
+Let's try installing the handy 
+[`wordcountaddin`](https://github.com/benmarwick/wordcountaddin){rel="noopener noreferrer" target="_blank"} 
+for RStudio. First navigate to the package page on Github: 
+[https://github.com/benmarwick/wordcountaddin](https://github.com/benmarwick/wordcountaddin){rel="noopener noreferrer" target="_blank"}.
 
 ![](`r rpkg_img02` "wordcount addin R package github page")
 
-Most packages that need to be installed from an online source will give you the code to do so in the readme of their repository. Another common package for installing from online repositories is called `devtools`, but this package contains many other functions we don't need for this task. You can replace `devtools` with `remotes` almost all of the time.
+Most packages that need to be installed from an online source will give you the 
+code to do so in the readme of their repository. Another common package for 
+installing from online repositories is called `devtools`, but this package 
+contains many other functions we don't need for this task. You can replace 
+`devtools` with `remotes` almost all of the time.
 
 ![](`r rpkg_img03` "wordcount addin install instructions")
 
-For our case, type `remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)` into the console and hit enter. You may be asked if you would like to update other packages. Enter `1` to try and update all. If this doesn't work, you can enter the command again and try `3` to ignore these updates.
+For our case, type 
+`remotes::install_github("benmarwick/wordcountaddin", type = "source", dependencies = TRUE)` 
+into the console and hit enter. You may be asked if you would like to update other 
+packages. Enter `1` to try and update all. If this doesn't work, you can enter 
+the command again and try `3` to ignore these updates.
 
 ![](`r rpkg_img04` "R console asking if you would like to update installed packages")
 
-Read the resulting install output. As long as it does not indicate anything failed to install, you're done!
+Read the resulting install output. As long as it does not indicate anything 
+failed to install, you're done!
 
 ![](`r rpkg_img05` "R consoel showing a sucsessful install")
 
-You can now use the helpful `wordcountaddin`! You can find it in the **Addins** dropdown above the editor pane.
+You can now use the helpful `wordcountaddin`! You can find it in the **Addins** 
+dropdown above the editor pane.
 
 ![](`r rpkg_img06` "dropdown addin menu in R studio showing thr wordcount addin")
 
 ### Packages from Local Source
 
-On occasion it will be necessary to install an R package from a local **source** `.tar.gz` file. You would need to download this file yourself, then install it. For example, let's download then install the `mgcv` package from [https://cran.r-project.org/web/packages/mgcv/index.html](https://cran.r-project.org/web/packages/mgcv/index.html){rel="noopener noreferrer" target="_blank"}. First navigate to that page, and click on the download link next to **package source**.
+On occasion it will be necessary to install an R package from a local **source** 
+`.tar.gz` file. You would need to download this file yourself, then install it. 
+For example, let's download then install the `mgcv` package from 
+[https://cran.r-project.org/web/packages/mgcv/index.html](https://cran.r-project.org/web/packages/mgcv/index.html){rel="noopener noreferrer" target="_blank"}. 
+First navigate to that page, and click on the download link next to **package source**.
 
-![](`r rpkg_img07` "CRAR page for the MGCV R pacakge with the download link highlighted")
+![](`r rpkg_img07` "CRAR page for the MGCV R package with the download link highlighted")
 
-Once the `.tar.gz` file is downloaded, leave it as it is, do not decompress it. Instead, find the file on your system and take note of it's location. On Windows you can shift-right click on it, then select **Copy as path**.
+Once the `.tar.gz` file is downloaded, leave it as it is, do not decompress it. 
+Instead, find the file on your system and take note of it's location. On Windows 
+you can shift-right click on it, then select **Copy as path**.
 
 ![](`r rpkg_img08` "windows context menu highlighting Copy as Path")
 
-In your R console, type in `install.packages("path/to/your/source_file.tar.gz", repos = NULL, type = "source")`. R will start installing the package from the local copy.
+In your R console, type in 
+`install.packages("path/to/your/source_file.tar.gz", repos = NULL, type = "source")`. 
+R will start installing the package from the local copy.
 
 Two things to note for Windows users:
 
-1. You will need to have installed R tools on your machine. There is a guide for that lower in this document.
+1. You will need to have installed R tools on your machine. There is a guide for 
+that lower in this document.
 
-2. If you are on windows, you will need to make sure your file path uses forward slashes (`/`) rather than back slashes (`\`).
+2. If you are on windows, you will need to make sure your file path uses forward 
+slashes (`/`) rather than back slashes (`\`).
 
 ![](`r rpkg_img09` "R console installing the local package")
 
@@ -214,11 +313,15 @@ Two things to note for Windows users:
 
 ### Introduction
 
-R Tools is a bundle of programs on Windows that allows R to build packages from local source files, rather than installing through CRAN. The vast majority of the time this is unnecessary, but some circumstances require it. Mac users do not need to install R Tools. 
+R Tools is a bundle of programs on Windows that allows R to build packages from 
+local source files, rather than installing through CRAN. The vast majority of the 
+time this is unnecessary, but some circumstances require it. Mac users do not 
+need to install R Tools. 
 
 ### RTools on Windows
 
-First, navigate to the R tools website at [https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/){rel="noopener noreferrer" target="_blank"}.
+First, navigate to the R tools website at 
+[https://cran.r-project.org/bin/windows/Rtools/](https://cran.r-project.org/bin/windows/Rtools/){rel="noopener noreferrer" target="_blank"}.
 
 ![](`r rt_img01` "R tools download page")
 
@@ -230,7 +333,8 @@ Once the download has finished, run the R tools installer.
 
 ![](`r rt_img03` "web browser showing finished R tools download")
 
-On the first page of the installer, select a custom location if you would like, but otherwise press **Next >**.
+On the first page of the installer, select a custom location if you would like, 
+but otherwise press **Next >**.
 
 ![](`r rt_img04` "location select for R tools install")
 
@@ -246,16 +350,26 @@ One the install is done, press **Finish**. You're not done yet though!
 
 ![](`r rt_img07` "finished R tools install")
 
-In order for R to make use of R tools, you need to add it to the `PATH` that R looks for tools on. To do this, open R or R Studio and type `writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")` in the console and press enter.
+In order for R to make use of R tools, you need to add it to the `PATH` that R 
+looks for tools on. To do this, open R or R Studio and type 
+`writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")` 
+in the console and press enter.
 
 ![](`r rt_img08` "R console checking R tools in installed")
 
 ### Verifying your install
 
-To verify R tools was installed successfully, first restart R to assure you are in a clean environment. You can do this by closing and re-opening your R or RStudio window. Afterwards, type `Sys.which("make")` (case sensitive!) into the console. If you see `"C:\\rtools40\\usr\\bin\\make.exe"` as a result you are all good!
+To verify R tools was installed successfully, first restart R to assure you are 
+in a clean environment. You can do this by closing and re-opening your R or 
+RStudio window. Afterwards, type `Sys.which("make")` (case sensitive!) into the 
+console. If you see `"C:\\rtools40\\usr\\bin\\make.exe"` as a result you are all 
+good!
 
 ![](`r rt_img10` "R console confirming R tools is on path")
 
 ### Installation troubleshooting
 
-If you are not able to successfully install R Tools on your own, please attend DataLab's Virtual Office Hours. Click [here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} for more information and to receive a Zoom link.
+If you are not able to successfully install R Tools on your own, please attend 
+DataLab's Virtual Office Hours. Click 
+[here](https://datalab.ucdavis.edu/office-hours/){rel="noopener noreferrer" target="_blank"} 
+for more information and to receive a Zoom link.

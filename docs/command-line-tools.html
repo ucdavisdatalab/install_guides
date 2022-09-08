@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>1 Command Line Tools | UC Davis DataLab Install Guides</title>
   <meta name="description" content="1 Command Line Tools | UC Davis DataLab Install Guides" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="1 Command Line Tools | UC Davis DataLab Install Guides" />
   <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://ucdavisdatalab.github.io/install_guides/" />
   
   
   <meta name="github-repo" content="ucdavisdatalab/install_guides" />
@@ -23,7 +24,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2022-05-23" />
+<meta name="date" content="2022-09-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,8 +33,8 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="r-and-r-tools.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -49,9 +50,9 @@
 
 
 
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -109,7 +110,7 @@
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#introduction-3"><i class="fa fa-check"></i><b>2.2.1</b> Introduction</a></li>
 <li class="chapter" data-level="2.2.2" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#packages-from-cran"><i class="fa fa-check"></i><b>2.2.2</b> Packages from CRAN</a></li>
-<li class="chapter" data-level="2.2.3" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#pacakges-from-github"><i class="fa fa-check"></i><b>2.2.3</b> Pacakges from Github</a></li>
+<li class="chapter" data-level="2.2.3" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#packages-from-github"><i class="fa fa-check"></i><b>2.2.3</b> Packages from Github</a></li>
 <li class="chapter" data-level="2.2.4" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#packages-from-local-source"><i class="fa fa-check"></i><b>2.2.4</b> Packages from Local Source</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#r-tools"><i class="fa fa-check"></i><b>2.3</b> R Tools</a>
@@ -231,40 +232,67 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="command-line-tools" class="section level1 hasAnchor" number="1">
-<h1><span class="header-section-number">1</span> Command Line Tools<a href="command-line-tools.html#command-line-tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="git" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Git<a href="command-line-tools.html#git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="introduction" class="section level3 hasAnchor" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Introduction<a href="command-line-tools.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Git is a ubiquitous software for <em>version control</em>. Version control describes a process of storing and organizing multiple versions (or copies) of documents that you create. Approaches to version control range from simple to complex and can involve the use of various human workflows and/or software applications to accomplish the overall goal of storing and managing multiple versions of the same document(s).</p>
-<p>Most people have a folder/directory somewhere on their computer that looks something like this:</p>
+<div id="command-line-tools" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Command Line Tools</h1>
+<div id="git" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Git</h2>
+<div id="introduction" class="section level3" number="1.1.1">
+<h3><span class="header-section-number">1.1.1</span> Introduction</h3>
+<p>Git is a ubiquitous software for <em>version control</em>. Version control describes a
+process of storing and organizing multiple versions (or copies) of documents that
+you create. Approaches to version control range from simple to complex and can
+involve the use of various human workflows and/or software applications to
+accomplish the overall goal of storing and managing multiple versions of the
+same document(s).</p>
+<p>Most people have a folder/directory somewhere on their computer that looks
+something like this:</p>
 <p><img src="img/mac_finder_1.png" title="File explorer showing several copies of a word document with version tags" /></p>
 <p>Or perhaps, this:</p>
 <p><img src="img/mac_window_2.png" title="File explorer showing several copies of a word document with dates" /></p>
-<p>This is a rudimentary form of version control that relies completely on the human workflow of saving multiple versions of a file. This system works minimally well, in that it does provide you with a history of file versions theoretically organized by their time sequence. But this filesystem method provides no information about how the file has changed from version to version, why you might have saved a particular version, or specifically how the various versions are related. This human-managed filesystem approach is more subject to error than software-assisted version control systems. It is not uncommon for users to make mistakes when naming file versions, or to go back and edit files out of sequence. Software-assisted version control systems such as Git were designed to solve this problem.</p>
-<p>If you would like more information on how Git works, read more in the <a href="https://git-scm.com/book/en/v2" rel="noopener noreferrer" target="_blank">Git Book</a> for free.</p>
+<p>This is a rudimentary form of version control that relies completely on the
+human workflow of saving multiple versions of a file. This system works minimally
+well, in that it does provide you with a history of file versions theoretically
+organized by their time sequence. But this filesystem method provides no information
+about how the file has changed from version to version, why you might have saved
+a particular version, or specifically how the various versions are related. This
+human-managed filesystem approach is more subject to error than software-assisted
+version control systems. It is not uncommon for users to make mistakes when naming
+file versions, or to go back and edit files out of sequence. Software-assisted
+version control systems such as Git were designed to solve this problem.</p>
+<p>If you would like more information on how Git works, read more in the
+<a href="https://git-scm.com/book/en/v2" rel="noopener noreferrer" target="_blank">Git Book</a>
+for free.</p>
 </div>
-<div id="git-on-windows" class="section level3 hasAnchor" number="1.1.2">
-<h3><span class="header-section-number">1.1.2</span> Git on Windows<a href="command-line-tools.html#git-on-windows" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Follow these step-by-step instructions if you’re installing Git on a Windows machine:</p>
+<div id="git-on-windows" class="section level3" number="1.1.2">
+<h3><span class="header-section-number">1.1.2</span> Git on Windows</h3>
+<p>Follow these step-by-step instructions if you’re installing Git on a Windows
+machine:</p>
 <p>First, launch a web browser, the image below shows the Microsoft Edge browser:</p>
 <p><img src="img/win_git_install_1_browser.png" title="New web browser window" /></p>
-<p>Next, navigate to the following Git download URL in your browser <a href="https://git-scm.com/downloads" rel="noopener noreferrer" target="_blank">https://git-scm/com/downloads</a>:</p>
+<p>Next, navigate to the following Git download URL in your browser
+<a href="https://git-scm.com/downloads" rel="noopener noreferrer" target="_blank">https://git-scm/com/downloads</a>:</p>
 <p><img src="img/win_git_install_2_git%20page.png" title="git website" /></p>
-<p>Select “Windows” from the Downloads portion of the Git webpage. Git will display the following page and automatically being downloading the correct version of the Git software. If the download doesn’t start automatically, click on the “Click here to download manually link”:</p>
+<p>Select “Windows” from the Downloads portion of the Git webpage. Git will display
+the following page and automatically being downloading the correct version of the
+Git software. If the download doesn’t start automatically, click on the “Click here
+to download manually link”:</p>
 <p><img src="img/win_git_install_3_downloading.png" title="git download page" /></p>
-<p>When the download is complete, open/Run the downloaded file (will look different in different browsers, but everyone should know how to do this):</p>
+<p>When the download is complete, open/Run the downloaded file (will look different
+in different browsers, but everyone should know how to do this):</p>
 <p><img src="img/win_git_install_4_run_open.png" title="Completed download box" /></p>
-<p>A screen will appear asking for permissions for the Git application to make changes to your device. Click on the <strong>Yes</strong> button:</p>
+<p>A screen will appear asking for permissions for the Git application to make changes
+to your device. Click on the <strong>Yes</strong> button:</p>
 <p><img src="img/win_git_install_5_allow_changes.png" title="Windows request to allow program to alter files" /></p>
 <p>Click <strong>Next</strong> to accept the user license:</p>
 <p><img src="img/win_git_install_6_license.png" title="git license agreement" /></p>
-<p>Leave the default “Destination Location” unchanged (usually C:\Program Files\Git) and hit <strong>Next</strong></p>
+<p>Leave the default “Destination Location” unchanged (usually C:\Program Files\Git)
+and hit <strong>Next</strong></p>
 <p><img src="img/win_git_install_7_install_location.png" title="git location selection" /></p>
 <p>You will see a screen like the one below asking you to “Select Components”:</p>
 <p><img src="img/win_git_install_8_default_components.png" title="git component selection" /></p>
-<p>Leave all of the default components selected and also check the boxes next to “Additional Icons” and it’s sub-item, “On the Desktop”. Your completed configurations window should have the following components selected:</p>
+<p>Leave all of the default components selected and also check the boxes next to
+“Additional Icons” and it’s sub-item, “On the Desktop”. Your completed
+configurations window should have the following components selected:</p>
 <pre><code>Additional Icons 
     -&gt; On the Desktop
 Windows Explorer integration
@@ -275,101 +303,157 @@ Associate .git* configuration files with default text editor
 Associate .sh files to be run with Bash</code></pre>
 <p>And should look like this:</p>
 <p><img src="img/win_git_install_9_checked_components.png" title="git component selection with custom options" /></p>
-<p>After verifying that you have the necessary components selected as per above, hit <strong>Next</strong>.</p>
-<p>The next screen will ask you to “Select a Start Menu Folder.” Keep the default value of Git and hit <strong>Next</strong>:</p>
+<p>After verifying that you have the necessary components selected as per above,
+hit <strong>Next</strong>.</p>
+<p>The next screen will ask you to “Select a Start Menu Folder.” Keep the default
+value of Git and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_10_start_menu.png" title="git start menu shortcut" /></p>
-<p>Leave the default “Use Vim (the ubiquitous text editor) as Git’s default editor” selected on the “Choosing the default editor used by Git” screen and hit <strong>Next</strong>:</p>
+<p>Leave the default “Use Vim (the ubiquitous text editor) as Git’s default editor”
+selected on the “Choosing the default editor used by Git” screen and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_11_editor.png" title="git editor selection" /></p>
-<p>On the next screen, leave the default “let Git decide” option selected and hit <strong>Next</strong>:</p>
+<p>On the next screen, leave the default “let Git decide” option selected and hit
+<strong>Next</strong>:</p>
 <p><img src="img/win_git_install_12_initial_branch.png" title="git initial branch name selection" /></p>
-<p>Leave the default “Git from the command line and also from 3rd-party software” selected and hit <strong>Next</strong>:</p>
+<p>Leave the default “Git from the command line and also from 3rd-party software”
+selected and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_13_path.png" title="git PATH options" /></p>
-<p>On the next “Choosing HTTPS transport backend” page leave the default “Use the OpenSSL library” option selected and hit <strong>Next</strong>:</p>
+<p>On the next “Choosing HTTPS transport backend” page leave the default “Use the
+OpenSSL library” option selected and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_14_HTTPS_openssl.png" title="git HTTPS options" /></p>
-<p>Leave the default “Checkout Windows-style, commit Unix-style line endings” selected on the next page and hit <strong>Next</strong>:</p>
+<p>Leave the default “Checkout Windows-style, commit Unix-style line endings”
+selected on the next page and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_15_line_ending.png" title="git line end options" /></p>
-<p>Keep the default “Use MinTTY (the default terminal of MSYS2)” selected on the “Configuring the terminal emulator to use with Git Bash” window and hit <strong>Next</strong>:</p>
+<p>Keep the default “Use MinTTY (the default terminal of MSYS2)” selected on the
+“Configuring the terminal emulator to use with Git Bash” window and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_16_terminal_emulator.png" title="git bash options" /></p>
-<p>Keep the default value of “Default (fast-forward or merge)” on the “Choose the default behavior of ‘git pull’” page and hit <strong>Next</strong>:</p>
+<p>Keep the default value of “Default (fast-forward or merge)” on the “Choose the
+default behavior of ‘git pull’” page and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_17_git_pull.png" title="git pull options" /></p>
-<p>Keep the default value of “Git Credential Manager Core” on the “Choose a credential helper” page and hit <strong>Next</strong>:</p>
+<p>Keep the default value of “Git Credential Manager Core” on the “Choose a credential
+helper” page and hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_18_credential_helper.png" title="git credential options" /></p>
-<p>Keep the default values on the “Configuration extra options” page by keeping “Enable file system caching” checked and “Enable symbolic links” unchecked and then hit <strong>Next</strong>:</p>
+<p>Keep the default values on the “Configuration extra options” page by keeping
+“Enable file system caching” checked and “Enable symbolic links” unchecked and
+then hit <strong>Next</strong>:</p>
 <p><img src="img/win_git_install_19_extra_options.png" title="git extra options" /></p>
-<p>Make sure that no options are checked in the “Configuring experimental options” page and hit <strong>Install</strong>:</p>
+<p>Make sure that no options are checked in the “Configuring experimental options”
+page and hit <strong>Install</strong>:</p>
 <p><img src="img/win_git_install_20_experimental_options.png" title="git experimental options" /></p>
-<p>After you hit this <strong>Install</strong> button as per above, you will see an install progress screen like the one below:</p>
+<p>After you hit this <strong>Install</strong> button as per above, you will see an install
+progress screen like the one below:</p>
 <p><img src="img/win_git_install_21_install_progress.png" title="git installing" /></p>
-<p>When the install is complete, a new, “Completing the Git Setup Wizard” window like the one below will appear:</p>
+<p>When the install is complete, a new, “Completing the Git Setup Wizard” window
+like the one below will appear:</p>
 <p><img src="img/win_git_install_22_install_complete.png" title="git completion window" /></p>
-<p>Make sure that all of the options on this window are unchecked as in the image below and then hit the <strong>Finish</strong> button:</p>
+<p>Make sure that all of the options on this window are unchecked as in the image
+below and then hit the <strong>Finish</strong> button:</p>
 <p><img src="img/win_git_install_23_deslect_and_finish.png" title="git completion window with unchecked View Release Notes" /></p>
 <p>This will complete your installation process.</p>
-<p><em>Windows users should verify that when downloading Git for Windows they have also installed Git Bash, which is necessary for working with Git in command line.</em></p>
+<p><em>Windows users should verify that when downloading Git for Windows they have also </em>
+<em>installed Git Bash, which is necessary for working with Git in command line.</em></p>
 </div>
-<div id="git-on-mac" class="section level3 hasAnchor" number="1.1.3">
-<h3><span class="header-section-number">1.1.3</span> Git on Mac<a href="command-line-tools.html#git-on-mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you are installing Git on a Mac, there is no extra configuration. Simply go the git download page at <a href="https://git-scm.com/downloads" rel="noopener noreferrer" target="_blank">https://git-scm.com/downloads</a> and choose the latest version for mac, and run the installer package when it is finished downloading. If you get an “unknown developer” warning during the install process, follow the instructions at the beginning of the video at <a href="https://www.youtube.com/watch?v=__kr-Ew5kbE" rel="noopener noreferrer" target="_blank">https://www.youtube.com/watch?v=__kr-Ew5kbE</a> to help you work through this problem.</p>
+<div id="git-on-mac" class="section level3" number="1.1.3">
+<h3><span class="header-section-number">1.1.3</span> Git on Mac</h3>
+<p>If you are installing Git on a Mac, there is no extra configuration. Simply go the
+Git download page at
+<a href="https://git-scm.com/downloads" rel="noopener noreferrer" target="_blank">https://git-scm.com/downloads</a>
+and choose the latest version for Mac, and run the installer package when it is
+finished downloading. If you get an “unknown developer” warning during the install
+process, follow the instructions at the beginning of the video at
+<a href="https://www.youtube.com/watch?v=__kr-Ew5kbE" rel="noopener noreferrer" target="_blank">https://www.youtube.com/watch?v=__kr-Ew5kbE</a>
+to help you work through this problem.</p>
 </div>
-<div id="verifying-your-install" class="section level3 hasAnchor" number="1.1.4">
-<h3><span class="header-section-number">1.1.4</span> Verifying your install<a href="command-line-tools.html#verifying-your-install" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><strong>Whether you’re installing on Windows or Mac, note that unlike most applications that you’ve installed before, you will not find a “Git” application in your programs or applications directory once the installation is complete.</strong> As long as you don’t get an explicit error message during the installation process, you can assume that the software was successfully installed. Git is a command-line application with which you interact using the command-line, which we’ll cover during the interactive session. If you’re already familiar with using command line, you can verify your install by opening the terminal (for Windows that will be Git Bash in your programs menu) and type <em>git –version</em>. You should then see a response of your installed version (e.g., git version 2.12.2.windows.2, or git version 2.12.2.mac.2), and not the error “command not found.”</p>
+<div id="verifying-your-install" class="section level3" number="1.1.4">
+<h3><span class="header-section-number">1.1.4</span> Verifying your install</h3>
+<p><strong>Whether you’re installing on Windows or Mac, note that unlike most applications </strong>
+<strong>that you’ve installed before, you will not find a “Git” application in your </strong>
+<strong>programs or applications directory once the installation is complete.</strong> As
+long as you don’t get an explicit error message during the installation process,
+you can assume that the software was successfully installed. Git is a command-line
+application with which you interact using the command-line. If you’re already
+familiar with using command line, you can verify your install by opening the
+terminal (for Windows that will be Git Bash in your programs menu) and type
+<code>git --version</code>. You should then see a response of your installed version
+(e.g., git version 2.12.2.windows.2, or git version 2.12.2.mac.2), and not the
+error “command not found.”</p>
 </div>
-<div id="installation-troubleshooting" class="section level3 hasAnchor" number="1.1.5">
-<h3><span class="header-section-number">1.1.5</span> Installation troubleshooting<a href="command-line-tools.html#installation-troubleshooting" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you are not able to successfully install Git on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
+<div id="installation-troubleshooting" class="section level3" number="1.1.5">
+<h3><span class="header-section-number">1.1.5</span> Installation troubleshooting</h3>
+<p>If you are not able to successfully install Git on your own, please attend
+DataLab’s Virtual Office Hours. Click
+<a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a>
+for more information and to receive a Zoom link.</p>
 </div>
 </div>
-<div id="windows-subsystem-for-linux-ubuntu" class="section level2 hasAnchor" number="1.2">
-<h2><span class="header-section-number">1.2</span> Windows Subsystem for Linux (Ubuntu)<a href="command-line-tools.html#windows-subsystem-for-linux-ubuntu" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="introduction-1" class="section level3 hasAnchor" number="1.2.1">
-<h3><span class="header-section-number">1.2.1</span> Introduction<a href="command-line-tools.html#introduction-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Windows now has the ability to install a linux operating system on your machine without the use of an emulator. This gives you a full-featured linux environment that can interact with your normal files.</p>
+<div id="windows-subsystem-for-linux-ubuntu" class="section level2" number="1.2">
+<h2><span class="header-section-number">1.2</span> Windows Subsystem for Linux (Ubuntu)</h2>
+<div id="introduction-1" class="section level3" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> Introduction</h3>
+<p>Windows now has the ability to install a Linux operating system on your machine
+without the use of an emulator. This gives you a full-featured linux environment
+that can interact with your normal files.</p>
 </div>
-<div id="check-your-windows-version" class="section level3 hasAnchor" number="1.2.2">
-<h3><span class="header-section-number">1.2.2</span> Check your windows version<a href="command-line-tools.html#check-your-windows-version" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>First, please check the build version of Windows that you are using. This can be done by selecting the <code>Windows logo key + r</code> on your keyboard. Once you do that, you should see the windows Run prompt:</p>
+<div id="check-your-windows-version" class="section level3" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> Check your windows version</h3>
+<p>First, please check the build version of Windows that you are using. This can be
+done by selecting the <code>Windows logo key + r</code> on your keyboard. Once you do that,
+you should see the windows Run prompt:</p>
 <p><img src="img/win_version_run.png" title="Windows check version from run prompt" /></p>
-<p>Type the command “winver” (no quotes) into the prompt, as depicted in the image above, and hit enter. You should see a screen similar to this:</p>
+<p>Type the command “winver” (no quotes) into the prompt, as depicted in the image
+above, and hit enter. You should see a screen similar to this:</p>
 <p><img src="img/win_version_popup.png" title="Windows build version" /></p>
-<p>Your build version number is the one that follows the “Windows Build” text (as highlighted in the above image). Depending on whether your build number is larger or smaller than 19041, please follow
+<p>Your build version number is the one that follows the “Windows Build” text (as
+highlighted in the above image). Depending on whether your build number is larger
+or smaller than 19041, please follow
 the appropriate directions below:</p>
 <ul>
 <li><a href="command-line-tools.html#windows-version-larger-than-or-equal-to-19041">Larger than (or equal to) 19041</a></li>
 <li><a href="command-line-tools.html#windows-version-larger-smaller-than-19041">Smaller than 19041</a></li>
 </ul>
-<div id="windows-version-larger-than-or-equal-to-19041" class="section level4 hasAnchor" number="1.2.2.1">
-<h4><span class="header-section-number">1.2.2.1</span> Windows version larger than (or equal to) 19041<a href="command-line-tools.html#windows-version-larger-than-or-equal-to-19041" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>In the start menu, search for “Powershell”, right click and select “run as administrator”.</p>
+<div id="windows-version-larger-than-or-equal-to-19041" class="section level4" number="1.2.2.1">
+<h4><span class="header-section-number">1.2.2.1</span> Windows version larger than (or equal to) 19041</h4>
+<p>In the start menu, search for “Powershell”, right click and select “run as
+administrator”.</p>
 <p><img src="img/win_search_powershell.png" title="Windows search menu for PowerShell" /></p>
-<p>A small blue window should open with a flashing cursor. Please type <code>wsl --install</code> and hit enter:</p>
+<p>A small blue window should open with a flashing cursor. Please type <code>wsl --install</code>
+and hit enter:</p>
 <p><img src="img/win_wsl_powershell.png" title="PowerShell command for installing WSL" /></p>
-<p>This will take a few minutes to install everything. Once it is finished, please skip to <a href="command-line-tools.html#commandline-verify">verifying your install</a>.</p>
-<p>If the above installation did not work- please try to install <a href="command-line-tools.html#windows-version-larger-smaller-than-19041">using these instructions</a> (even if your version is not smaller than 19041).</p>
+<p>This will take a few minutes to install everything. Once it is finished, please
+skip to <a href="command-line-tools.html#commandline-verify">verifying your install</a>.</p>
+<p>If the above installation did not work- please try to install
+<a href="command-line-tools.html#windows-version-larger-smaller-than-19041">using these instructions</a> (even if
+your version is not smaller than 19041).</p>
 </div>
-<div id="windows-version-larger-smaller-than-19041" class="section level4 hasAnchor" number="1.2.2.2">
-<h4><span class="header-section-number">1.2.2.2</span> Windows version larger smaller than 19041<a href="command-line-tools.html#windows-version-larger-smaller-than-19041" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>In the start menu, search for “Turn Windows features on or off” and open that settings window.</p>
+<div id="windows-version-larger-smaller-than-19041" class="section level4" number="1.2.2.2">
+<h4><span class="header-section-number">1.2.2.2</span> Windows version larger smaller than 19041</h4>
+<p>In the start menu, search for “Turn Windows features on or off” and open that
+settings window.</p>
 <p><img src="img/win_wsl_1.jpg" title="Windows search menu selecting Turn windows features on or off" /></p>
-<p>In the settings window, scroll down to “Windows Subsystem for Linux”, check the box next to it, and select <code>OK</code> at the bottom of the window.</p>
+<p>In the settings window, scroll down to “Windows Subsystem for Linux”, check the
+box next to it, and select <code>OK</code> at the bottom of the window.</p>
 <p><img src="img/win_wsl_2.jpg" title="Windows features window turning on Windows Subsystem for Linux" /></p>
-<p>You will not need to restart your computer. Once you have rebooted, open the Windows Store from the start menu.</p>
+<p>You will not need to restart your computer. Once you have rebooted, open the
+Windows Store from the start menu.</p>
 <p><img src="img/win_wsl_3.jpg" title="Windows search menu opening the Microsoft store" /></p>
-<p>In the Windows Store, search for <code>Ubuntu</code>, and select the version-less one unless you have a reason to pick a specific version.</p>
+<p>In the Windows Store, search for <code>Ubuntu</code>, and select the version-less one
+unless you have a reason to pick a specific version.</p>
 <p><img src="img/win_wsl_4.jpg" title="Home page of Microsoft store searching for Ubuntu" /></p>
 <p>On the Ubuntu page, select <code>Get</code> to install.</p>
 </div>
 </div>
-<div id="commandline-verify" class="section level3 hasAnchor" number="1.2.3">
-<h3><span class="header-section-number">1.2.3</span> Verifying your install<a href="command-line-tools.html#commandline-verify" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="commandline-verify" class="section level3" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> Verifying your install</h3>
 <p>In the start menu, search for and run <code>Ubuntu</code>.</p>
 <p><img src="img/win_wsl_5.jpg" title="Windows search menu opening Ubuntu" /></p>
 <p>If a terminal window opens, you should be good to go!</p>
 <p><img src="img/data%20lab%20command%20line.jpg" title="Ubuntu command line showing DataLab ascii art" /></p>
 </div>
-<div id="installation-troubleshooting-1" class="section level3 hasAnchor" number="1.2.4">
-<h3><span class="header-section-number">1.2.4</span> Installation troubleshooting<a href="command-line-tools.html#installation-troubleshooting-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>If you are not able to successfully install the Linux Subsystem for Windows on your own, please attend DataLab’s Virtual Office Hours. Click <a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a> for more information and to receive a Zoom link.</p>
+<div id="installation-troubleshooting-1" class="section level3" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> Installation troubleshooting</h3>
+<p>If you are not able to successfully install the Linux Subsystem for Windows on
+your own, please attend DataLab’s Virtual Office Hours. Click
+<a href="https://datalab.ucdavis.edu/office-hours/" rel="noopener noreferrer" target="_blank">here</a>
+for more information and to receive a Zoom link.</p>
 
 </div>
 </div>
@@ -384,6 +468,7 @@ the appropriate directions below:</p>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -413,10 +498,6 @@ gitbook.start({
 "text": null
 },
 "download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
 "toc": {
 "collapse": "section"
 }
