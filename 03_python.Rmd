@@ -186,7 +186,8 @@ a terminal of your chosen environment.
 ![](`r pm_conda_1` "Opening a terminal from anaconda")
 
 Once you are in the terminal of your chosen environment, you can install any 
-module you know the name of using `conda install <module name>`.
+module you know the name of using `conda install <module name>`. In the example 
+below, we install `NumPy`, a popular library for data science analysis.
 
 ![](`r pm_conda_2` "installing numpy for Python in the terminal using conda")
 
@@ -198,12 +199,13 @@ module of that name.
 
 ### Installing Modules using Pip
 
-If you are not using conda, or conda could not find a module, you will need to 
-use `pip` to install modules. First, start a terminal using the Python environment 
-you want to install the module in.
+If you are not using `conda`, or `conda` could not find a module, you will need 
+to use `pip` to install modules. First, start a terminal using the Python 
+environment you want to install the module in.
 
 Once you are in the terminal of your chosen environment, you can install any 
-module you know the name of using `pip install <module name>`.
+module you know the name of using `pip install <module name>`. Again, we use 
+`NumPy` as an example.
 
 ![](`r pm_pip_1` "installing numpy for Python in the terminal using pip")
 
