@@ -2,7 +2,7 @@
 
 ```{r include=FALSE}
 # anaconda images
-anaconda_1 = "./img/win_anaconda_1.jpg"
+anaconda_1 = "./img/mac_anaconda_1.png"
 anaconda_2 = "./img/win_anaconda_2.jpg"
 anaconda_3 = "./img/win_anaconda_3.jpg"
 anaconda_4 = "./img/win_anaconda_4.jpg"
@@ -41,7 +41,7 @@ pm_python_3 = "./img/pm_python_3.jpg"
 
 To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on windows, first navigate to their site, select products, then individual edition.
 
-![](`r anaconda_1` "Anaconda homepage selecting the individual edition for download")
+![](`r anaconda_1` "Anaconda homepage selecting the Anaconda Distribution for download")
 
 Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). Most modern Windows computers can make use of the 64-Bit installer.
 
