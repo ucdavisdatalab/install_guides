@@ -16,6 +16,12 @@ anaconda_11 = "./img/win_anaconda_11.jpg"
 anaconda_12 = "./img/win_anaconda_12.jpg"
 anaconda_13 = "./img/win_anaconda_13.jpg"
 mac_anaconda_1 = "./img/mac_anaconda_1.png"
+mac_anaconda_2 = "./img/mac_anaconda_2.png"
+mac_anaconda_3 = "./img/mac_anaconda_3.png"
+mac_anaconda_4 = "./img/mac_anaconda_4.png"
+mac_anaconda_5 = "./img/mac_anaconda_5.png"
+mac_anaconda_6 = "./img/mac_anaconda_6.png"
+mac_anaconda_7 = "./img/mac_anaconda_7.png"
 
 # jupyter
 jup_1 = "./img/win_jup_1.jpg"
@@ -39,7 +45,7 @@ pm_python_3 = "./img/pm_python_3.jpg"
 
 ### Anaconda on Windows
 
-To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on windows, first navigate to their site, select products, then individual edition.
+To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on windows, first navigate to their site, select products, then Anaconda Distribution.
 
 ![](`r anaconda_1` "Anaconda homepage selecting the Anaconda Distribution for download")
 
@@ -81,17 +87,27 @@ One the next page it will prompt you to download PyCharm. PyCharm is an interact
 
 ### Anaconda on Mac
 
-To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on mac, first navigate to their site, select products, then individual edition.
+To install [Anaconda](https://www.anaconda.com/#){rel="noopener noreferrer" target="_blank"} on mac, first navigate to their site, select products, then Anaconda Distribution.
 
-![](`r anaconda_1` "Anaconda homepage selecting the individual edition for download")
+![](`r anaconda_1` "Anaconda homepage selecting the Anaconda Distribution for download")
 
-Scroll down on this page and near the bottom you will be able to select your preferred download (or click the download button). For mac, select the graphical 64-Bit installer.
+Navigate to the green button and click "download."
 
-![](`r anaconda_2` "Anaconda download operating system selection")
+![](`r mac_anaconda_2` "Anaconda download operating system selection")
 
-Once the download has finished, run the executable. You will need to select OK to agree to the license, and to allow Anaconda-Nagivator access to control Terminal. 
+Once the download has finished, run the executable. You will need to select "allow" to enable the download and allow Anaconda-Nagivator access to control Terminal. 
 
-![](`r mac_anaconda_1` "Mac asking for anaconda permissions")
+![](`r mac_anaconda_3` "Mac asking to allow download")
+
+![](`r mac_anaconda_4` "Mac asking to allow installation")
+
+Click "continue" through the installer steps and "agree" to the terms of the software license agreement when prompted. Click "ok" and "allow" to allow Anaconda permissions to access your files. 
+
+![](`r mac_anaconda_5` "Mac Anaconda installer welcome")
+
+![](`r mac_anaconda_6` "Mac Anaconda installer software licensing agreement")
+
+![](`r mac_anaconda_7` "Mac Anaconda installer allow access to files")
 
 ### Verifying your install
 
