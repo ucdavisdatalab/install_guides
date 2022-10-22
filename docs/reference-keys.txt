@@ -23,7 +23,7 @@ installation-troubleshooting-2
 r-packages
 introduction-3
 packages-from-cran
-pacakges-from-github
+packages-from-github
 packages-from-local-source
 r-tools
 introduction-4

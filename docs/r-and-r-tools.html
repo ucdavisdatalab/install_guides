@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 R and R Tools | UC Davis DataLab Install Guides</title>
   <meta name="description" content="2 R and R Tools | UC Davis DataLab Install Guides" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 R and R Tools | UC Davis DataLab Install Guides" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="UC Davis DataLab" />
 
 
-<meta name="date" content="2022-05-23" />
+<meta name="date" content="2022-10-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -109,7 +109,7 @@
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#introduction-3"><i class="fa fa-check"></i><b>2.2.1</b> Introduction</a></li>
 <li class="chapter" data-level="2.2.2" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#packages-from-cran"><i class="fa fa-check"></i><b>2.2.2</b> Packages from CRAN</a></li>
-<li class="chapter" data-level="2.2.3" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#pacakges-from-github"><i class="fa fa-check"></i><b>2.2.3</b> Pacakges from Github</a></li>
+<li class="chapter" data-level="2.2.3" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#packages-from-github"><i class="fa fa-check"></i><b>2.2.3</b> Packages from Github</a></li>
 <li class="chapter" data-level="2.2.4" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#packages-from-local-source"><i class="fa fa-check"></i><b>2.2.4</b> Packages from Local Source</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="r-and-r-tools.html"><a href="r-and-r-tools.html#r-tools"><i class="fa fa-check"></i><b>2.3</b> R Tools</a>
@@ -315,8 +315,8 @@
 <p>For example, if you wanted to install the <code>skimr</code> package, you would enter <code>install.packages("skimr")</code>. Note that you do need to put the package name in quotes, and that it is case sensitive. You can install multiple packages at a time by passing a vector of package names to <code>install.packages()</code>, for example: <code>install.packages(c("skimr", "corrplot"))</code>.</p>
 <p>You can test if the packages installed correctly by calling it in R using the <code>library()</code> function.</p>
 </div>
-<div id="pacakges-from-github" class="section level3 hasAnchor" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> Pacakges from Github<a href="r-and-r-tools.html#pacakges-from-github" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="packages-from-github" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Packages from Github<a href="r-and-r-tools.html#packages-from-github" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Not all packages are available on CRAN, especially very new or very old packages. For these you will most likely need to install them from an online repository, the most common of which is <a href="https://github.com/" rel="noopener noreferrer" target="_blank">Github</a>. There are some R packages that make this process easy. We will use the <code>remotes</code> package.</p>
 <p>First install the <code>remotes</code> package by running <code>install.packages("remotes")</code> in the R console. If it installed correctly, you will see <code>package ‘remotes’ successfully unpacked and MD5 sums checked</code>.</p>
 <p><img src="img/win_r_pkg_1.jpg" title="R studio console" /></p>
